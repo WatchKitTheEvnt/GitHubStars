@@ -77,7 +77,7 @@
                                         <color key="backgroundColor" red="0.25490196079999999" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
                                 </tableRow>
-                                <tableRow identifier="NoAuthenticationRowController" id="qKQ-NS-uXA" customClass="GHSListItemRowController">
+                                <tableRow identifier="NoAuthenticationRowController" selectable="NO" id="qKQ-NS-uXA" customClass="GHSListItemRowController">
                                     <group key="rootItem" width="1" alignment="left" id="e2X-Mc-TeG">
                                         <items>
                                             <label alignment="left" verticalAlignment="center" text="Log in" id="A4C-On-dey"/>
@@ -88,6 +88,15 @@
                             </items>
                         </table>
                     </items>
+                    <menu key="menu" id="P94-Dz-cDW">
+                        <items>
+                            <menuItem title="Refresh" icon="shuffle" id="JaJ-fT-Glb">
+                                <connections>
+                                    <action selector="refreshDataAction" destination="AgC-eL-Hgc" id="EaR-Db-byc"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="interfaceTable" destination="3th-0H-GUt" id="M42-rm-3PQ"/>
                     </connections>
@@ -111,28 +120,21 @@
                             </items>
                         </group>
                         <label alignment="left" text="Description" numberOfLines="0" id="T5x-kL-p0B"/>
-                        <separator alignment="left" alpha="0.29999999999999999" id="VJj-kf-MF8"/>
-                        <group width="1" alignment="left" layout="vertical" id="Hgc-i0-7hK">
-                            <items>
-                                <label alignment="left" alpha="0.5" text="Language" id="cbK-LA-uvw">
-                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
-                                </label>
-                                <label alignment="left" text="Objective-c" minimumScaleFactor="0.80000000000000004" id="xrW-mw-K6P"/>
-                                <separator alignment="left" alpha="0.29999999999999999" id="q83-mj-mbf"/>
-                                <label alignment="left" alpha="0.5" text="Last update" id="X03-GC-1K6">
-                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
-                                </label>
-                                <label alignment="left" text="Yesterday" minimumScaleFactor="0.80000000000000004" id="4E3-Ne-AC7"/>
-                            </items>
-                        </group>
-                        <group width="1" alignment="left" id="GIW-jk-P8X"/>
+                        <separator alignment="left" id="VJj-kf-MF8">
+                            <color key="color" red="0.25490196079999999" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label alignment="left" alpha="0.70000000000000018" text="Language" id="cbK-LA-uvw">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <label alignment="left" text="Objective-c" minimumScaleFactor="0.80000000000000004" id="xrW-mw-K6P"/>
+                        <separator alignment="left" id="q83-mj-mbf">
+                            <color key="color" red="0.25490196079999999" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label alignment="left" alpha="0.70000000000000018" text="Last update" id="X03-GC-1K6">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <label alignment="left" text="Yesterday" minimumScaleFactor="0.80000000000000004" id="4E3-Ne-AC7"/>
                     </items>
-                    <menu key="menu" id="LhZ-yk-QgZ">
-                        <items>
-                            <menuItem title="Open" icon="info" id="Y0l-Fo-3gb"/>
-                            <menuItem title="Star" id="h9i-w1-APi"/>
-                        </items>
-                    </menu>
                     <connections>
                         <outlet property="forksLabel" destination="aTo-AL-8Vd" id="Ll9-R2-TAh"/>
                         <outlet property="languageLabel" destination="xrW-mw-K6P" id="rX1-oW-i8Y"/>

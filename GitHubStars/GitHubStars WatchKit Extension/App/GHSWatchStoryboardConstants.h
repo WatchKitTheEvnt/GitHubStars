@@ -11,7 +11,8 @@
 #pragma mark - GHSWatchMainInterfaceController
 
 extern NSString *const GHSWatchMainInterfaceControllerListRowType;
-extern NSString *const GHSWatchMainInterfaceControllerNoRowType;
+extern NSString *const GHSWatchMainInterfaceControllerEmptyListRowType;
+extern NSString *const GHSWatchMainInterfaceControllerNotAuthenticatedRowType;
 
 extern NSString *const GHSWatchMainInterfaceControllerListSelectionSegue;
 

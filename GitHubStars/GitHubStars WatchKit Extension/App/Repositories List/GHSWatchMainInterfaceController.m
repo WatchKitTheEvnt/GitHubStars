@@ -73,19 +73,7 @@
 - (void)awakeWithContext:(id)context
 {
     [super awakeWithContext:context];
-}
-
-- (void)willActivate
-{
-    // This method is called when watch view controller is about to be visible to user
-    [super willActivate];
     [self prepareInterface];
-}
-
-- (void)didDeactivate
-{
-    // This method is called when watch view controller is no longer visible
-    [super didDeactivate];
 }
 
 - (void)prepareInterface
@@ -98,30 +86,20 @@
     
     NSArray *repositories = userRepositories.repositories;
     
-    if (userRepositories == nil)
-    {
-        [self showAuthenticationRequired];
-    }
-    else if (repositories)
-    {
-        self.repositories = repositories;
-        [self refreshData];
-    }
-    else
-    {
-        [self showZeroCase];
-        [self fetchUserRepositories];
-    }
+    [self refreshDataWithRepositories:repositories];
 }
 
 - (void)showAuthenticationRequired
 {
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0U];
+    [self.interfaceTable insertRowsAtIndexes:indexSet withRowType:GHSWatchMainInterfaceControllerNotAuthenticatedRowType];
+    self.loaded = NO;
 }
 
 - (void)showZeroCase
 {
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0U];
-    [self.interfaceTable insertRowsAtIndexes:indexSet withRowType:GHSWatchMainInterfaceControllerNoRowType];
+    [self.interfaceTable insertRowsAtIndexes:indexSet withRowType:GHSWatchMainInterfaceControllerEmptyListRowType];
     self.loaded = NO;
 }
 
@@ -132,20 +110,26 @@
         NSArray *repositories = userRepositories.repositories;
         
         __strong GHSWatchMainInterfaceController *strongSelf = weakSelf;
-        strongSelf.loaded = YES;
-        strongSelf.repositories = repositories;
-        [strongSelf refreshData];
+        [strongSelf refreshDataWithRepositories:repositories];
     }];
 }
 
-- (void)refreshData
+- (void)refreshDataWithRepositories:(NSArray *)repositories
 {
-    NSInteger listItemCount = [self.repositories count];
+    NSInteger listItemCount = [repositories count];
     
+    NSArray *previousRepositories = self.repositories;
+    self.repositories = repositories;
     if (listItemCount > 0)
     {
+        if ([previousRepositories count] == 0)
+        {
+            NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
+            [self.interfaceTable removeRowsAtIndexes:indexSet];
+        }
+        
         // Update the data to show all of the list items.
-        [self.interfaceTable setNumberOfRows:listItemCount withRowType:@"RepositoryRowController"];
+        [self.interfaceTable setNumberOfRows:listItemCount withRowType:GHSWatchMainInterfaceControllerListRowType];
         
         for (NSInteger idx = 0; idx < listItemCount; idx++) {
             [self configureRepositoryRowControllerAtIndex:idx];
@@ -153,11 +137,15 @@
     }
     else if (self.repositories != nil)
     {
-        [self showAuthenticationRequired];
+        [self showZeroCase];
+        if (previousRepositories == nil)
+        {
+            [self fetchUserRepositories];
+        }
     }
     else
     {
-        [self showZeroCase];
+        [self showAuthenticationRequired];
     }
     
     self.loaded = YES;
@@ -179,7 +167,6 @@
     NSData *popularRepositoryData = userInfo[GHSWKEPopularRepositoryData];
     if (popularRepositoryData != nil)
     {
-        
         GHSRepository *popularRepository = [GHSRepository deserialize:popularRepositoryData];
         [self pushControllerWithName:GHSWathRepositoryDetailsInterfaceController context:popularRepository];
         return;
@@ -215,6 +202,12 @@
     [self presentControllerWithName:GHSWathPullRequestDetailsInterfaceController context:pullRequest];
 }
 
+#pragma mark - Menu actions
+
+- (IBAction)refreshDataAction
+{
+    [self fetchUserRepositories];
+}
 
 @end
 
