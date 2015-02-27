@@ -1,0 +1,23 @@
+{
+    "aps": {
+        "alert": {
+            "body": "New PullRequest available on Test Branch",
+            "title": "New Pull Request"
+        },
+        "category": "PullRequestCategory"
+    },
+    
+    "WatchKit Simulator Actions": [
+    {
+        "title": "See Details",
+        "identifier": "moreDetailsButtonAction"
+    }
+                                   ],
+    
+    "pullRequestTitle": "just a simple commit",
+    "pullRequestRepositoryName": "Test",
+    "pullRequestRepositoryOwner": "ieduardogf",
+    "pullRequestState": "Open"
+}
+
+

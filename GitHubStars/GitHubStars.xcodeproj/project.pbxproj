@@ -1,0 +1,2261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E3017341AA0B25E002D610E /* GHSRepositoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3017331AA0B25E002D610E /* GHSRepositoryCell.m */; };
+		4E30173A1AA0C885002D610E /* TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3017391AA0C885002D610E /* TestAppDelegate.m */; };
+		4E53B1231A9FA40500585894 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E53B1221A9FA40500585894 /* Interface.storyboard */; };
+		4E54671E1A9F981100A03287 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466A01A9F981100A03287 /* AppDelegate.m */; };
+		4E54671F1A9F981100A03287 /* GHSAuthenticationEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466A41A9F981100A03287 /* GHSAuthenticationEntity.m */; };
+		4E5467201A9F981100A03287 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466A61A9F981100A03287 /* KeychainItemWrapper.m */; };
+		4E5467211A9F981100A03287 /* GHSAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466A91A9F981100A03287 /* GHSAuthenticationViewController.m */; };
+		4E5467221A9F981100A03287 /* GHSAuthenticationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466AC1A9F981100A03287 /* GHSAuthenticationViewModel.m */; };
+		4E5467231A9F981100A03287 /* GHSViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466AF1A9F981100A03287 /* GHSViewModel.m */; };
+		4E5467241A9F981100A03287 /* GHSViewModelStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466B11A9F981100A03287 /* GHSViewModelStatus.m */; };
+		4E5467251A9F981100A03287 /* GHSNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466B41A9F981100A03287 /* GHSNavigator.m */; };
+		4E5467261A9F981100A03287 /* GHSAuthenticationScreenNavigationRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466B71A9F981100A03287 /* GHSAuthenticationScreenNavigationRoute.m */; };
+		4E5467271A9F981100A03287 /* GHSNavigationRoutePlanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466BB1A9F981100A03287 /* GHSNavigationRoutePlanner.m */; };
+		4E5467281A9F981100A03287 /* GHSPopViewControllerNavigationRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466BD1A9F981100A03287 /* GHSPopViewControllerNavigationRoute.m */; };
+		4E5467291A9F981100A03287 /* GHSRepoDetailScreenNavigationRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466BF1A9F981100A03287 /* GHSRepoDetailScreenNavigationRoute.m */; };
+		4E54672A1A9F981100A03287 /* GHSUserReposListScreenNavigationRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466C11A9F981100A03287 /* GHSUserReposListScreenNavigationRoute.m */; };
+		4E54672B1A9F981100A03287 /* GHSUserPullRequestNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466C61A9F981100A03287 /* GHSUserPullRequestNetwork.m */; };
+		4E54672C1A9F981100A03287 /* GHSFetchUserPullRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466C91A9F981100A03287 /* GHSFetchUserPullRequest.m */; };
+		4E54672D1A9F981100A03287 /* GHSReactiveGetUserPullRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466CB1A9F981100A03287 /* GHSReactiveGetUserPullRequest.m */; };
+		4E54672E1A9F981100A03287 /* GHSRepositoryDetailNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466CF1A9F981100A03287 /* GHSRepositoryDetailNetwork.m */; };
+		4E54672F1A9F981100A03287 /* GHSRepoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466D21A9F981100A03287 /* GHSRepoDetailViewController.m */; };
+		4E5467301A9F981100A03287 /* GHSRepoSelectedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466D61A9F981100A03287 /* GHSRepoSelectedContext.m */; };
+		4E5467311A9F981100A03287 /* GHSRepoDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466D81A9F981100A03287 /* GHSRepoDetailViewModel.m */; };
+		4E5467321A9F981100A03287 /* GHSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466DC1A9F981100A03287 /* GHSRootViewController.m */; };
+		4E5467331A9F981100A03287 /* GHSRootViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466DF1A9F981100A03287 /* GHSRootViewModel.m */; };
+		4E5467341A9F981100A03287 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5466E11A9F981100A03287 /* LaunchScreen.xib */; };
+		4E5467351A9F981100A03287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5466E31A9F981100A03287 /* Main.storyboard */; };
+		4E5467361A9F981100A03287 /* GHSUserRepositoriesNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466E91A9F981100A03287 /* GHSUserRepositoriesNetwork.m */; };
+		4E5467371A9F981100A03287 /* GHSUserRepositoriesStorage+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466EB1A9F981100A03287 /* GHSUserRepositoriesStorage+Reactive.m */; };
+		4E5467381A9F981100A03287 /* GHSFetchUserRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466EE1A9F981100A03287 /* GHSFetchUserRepositories.m */; };
+		4E5467391A9F981100A03287 /* GHSLoadUserRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466F01A9F981100A03287 /* GHSLoadUserRepositories.m */; };
+		4E54673A1A9F981100A03287 /* GHSReactiveGetUserRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466F21A9F981100A03287 /* GHSReactiveGetUserRepositories.m */; };
+		4E54673C1A9F981100A03287 /* GHSUserReposListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466F71A9F981100A03287 /* GHSUserReposListViewController.m */; };
+		4E54673D1A9F981100A03287 /* GHSUserInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466FA1A9F981100A03287 /* GHSUserInfoViewModel.m */; };
+		4E54673E1A9F981100A03287 /* GHSUserReposListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466FC1A9F981100A03287 /* GHSUserReposListViewModel.m */; };
+		4E54673F1A9F981100A03287 /* GHSNotificationsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467001A9F981100A03287 /* GHSNotificationsPresenter.m */; };
+		4E5467401A9F981100A03287 /* GHSUserNotificationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467021A9F981100A03287 /* GHSUserNotificationPresenter.m */; };
+		4E5467411A9F981100A03287 /* GHSNotificationsRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467051A9F981100A03287 /* GHSNotificationsRegister.m */; };
+		4E5467421A9F981100A03287 /* GHSFakeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467091A9F981100A03287 /* GHSFakeApplication.m */; };
+		4E5467431A9F981100A03287 /* GHSFakePushNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54670B1A9F981100A03287 /* GHSFakePushNotifications.m */; };
+		4E5467441A9F981100A03287 /* GHSRegisterPushNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54670D1A9F981100A03287 /* GHSRegisterPushNotifications.m */; };
+		4E5467451A9F981100A03287 /* GHSNotificationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467111A9F981100A03287 /* GHSNotificationSettings.m */; };
+		4E5467461A9F981100A03287 /* GHSRegisterUserNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467131A9F981100A03287 /* GHSRegisterUserNotifications.m */; };
+		4E5467471A9F981100A03287 /* GHSNotificationsModuleCollaboratos.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467171A9F981100A03287 /* GHSNotificationsModuleCollaboratos.m */; };
+		4E5467481A9F981100A03287 /* GHSWatchKitExtensionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54671A1A9F981100A03287 /* GHSWatchKitExtensionService.m */; };
+		4E5467491A9F981100A03287 /* GHSWatchKitExtensionServiceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54671D1A9F981100A03287 /* GHSWatchKitExtensionServiceModule.m */; };
+		4E54676D1A9F9A5700A03287 /* GitHubStarsCoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E54674A1A9F9A5700A03287 /* GitHubStarsCoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E54676E1A9F9A5700A03287 /* GHSSerializableModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E54674C1A9F9A5700A03287 /* GHSSerializableModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E54676F1A9F9A5700A03287 /* GHSSerializableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54674D1A9F9A5700A03287 /* GHSSerializableModel.m */; };
+		4E5467701A9F9A5700A03287 /* GHSSerializing.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E54674E1A9F9A5700A03287 /* GHSSerializing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5467711A9F9A5700A03287 /* GHSPullRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5467511A9F9A5700A03287 /* GHSPullRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5467721A9F9A5700A03287 /* GHSPullRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467521A9F9A5700A03287 /* GHSPullRequest.m */; };
+		4E5467731A9F9A5700A03287 /* GHSUserPullRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5467531A9F9A5700A03287 /* GHSUserPullRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5467741A9F9A5700A03287 /* GHSUserPullRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467541A9F9A5700A03287 /* GHSUserPullRequest.m */; };
+		4E5467751A9F9A5700A03287 /* GHSUserPullRequestDefaultStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5467571A9F9A5700A03287 /* GHSUserPullRequestDefaultStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5467761A9F9A5700A03287 /* GHSUserPullRequestDefaultStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467581A9F9A5700A03287 /* GHSUserPullRequestDefaultStorage.m */; };
+		4E5467771A9F9A5700A03287 /* GHSUserPullRequestFileStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E54675A1A9F9A5700A03287 /* GHSUserPullRequestFileStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5467781A9F9A5700A03287 /* GHSUserPullRequestFileStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54675B1A9F9A5700A03287 /* GHSUserPullRequestFileStorage.m */; };
+		4E5467791A9F9A5700A03287 /* GHSPullRequestAsyncStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E54675C1A9F9A5700A03287 /* GHSPullRequestAsyncStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E54677A1A9F9A5700A03287 /* GHSPullRequestSyncStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E54675D1A9F9A5700A03287 /* GHSPullRequestSyncStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E54677B1A9F9A5700A03287 /* GHSFileStorageCordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E54675F1A9F9A5700A03287 /* GHSFileStorageCordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E54677C1A9F9A5700A03287 /* GHSFileStorageCordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467601A9F9A5700A03287 /* GHSFileStorageCordinator.m */; };
+		4E54677D1A9F9A5700A03287 /* GHSStorageCordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5467611A9F9A5700A03287 /* GHSStorageCordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E54677E1A9F9A5700A03287 /* GHSUserDefaultStorageCordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5467621A9F9A5700A03287 /* GHSUserDefaultStorageCordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E54677F1A9F9A5700A03287 /* GHSUserDefaultStorageCordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467631A9F9A5700A03287 /* GHSUserDefaultStorageCordinator.m */; };
+		4E5467801A9F9A5700A03287 /* GHSRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5467661A9F9A5700A03287 /* GHSRepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5467811A9F9A5700A03287 /* GHSRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467671A9F9A5700A03287 /* GHSRepository.m */; };
+		4E5467821A9F9A5700A03287 /* GHSUserRepositories.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5467681A9F9A5700A03287 /* GHSUserRepositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5467831A9F9A5700A03287 /* GHSUserRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467691A9F9A5700A03287 /* GHSUserRepositories.m */; };
+		4E5467841A9F9A5700A03287 /* GHSUserRepositoriesStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E54676B1A9F9A5700A03287 /* GHSUserRepositoriesStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5467851A9F9A5700A03287 /* GHSUserRepositoriesStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54676C1A9F9A5700A03287 /* GHSUserRepositoriesStorage.m */; };
+		4E5467881A9F9ECA00A03287 /* PullRequestPushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 4E5467861A9F9ECA00A03287 /* PullRequestPushNotificationPayload.apns */; };
+		4E5467891A9F9ECA00A03287 /* StarsPushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 4E5467871A9F9ECA00A03287 /* StarsPushNotificationPayload.apns */; };
+		4E5467B51A9F9F5F00A03287 /* GHSWatchStoryboardConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467901A9F9F5F00A03287 /* GHSWatchStoryboardConstants.m */; };
+		4E5467B61A9F9F5F00A03287 /* GHSWatchPullRequestDetailsInterfazController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467931A9F9F5F00A03287 /* GHSWatchPullRequestDetailsInterfazController.m */; };
+		4E5467B71A9F9F5F00A03287 /* GHSWatchMainInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467961A9F9F5F00A03287 /* GHSWatchMainInterfaceController.m */; };
+		4E5467B81A9F9F5F00A03287 /* GHSWathRepositoryDetailsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467991A9F9F5F00A03287 /* GHSWathRepositoryDetailsInterfaceController.m */; };
+		4E5467B91A9F9F5F00A03287 /* GHSListItemRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54679C1A9F9F5F00A03287 /* GHSListItemRowController.m */; };
+		4E5467BA1A9F9F5F00A03287 /* GHSRepositoryRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54679E1A9F9F5F00A03287 /* GHSRepositoryRowController.m */; };
+		4E5467BB1A9F9F5F00A03287 /* GHSGlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467A11A9F9F5F00A03287 /* GHSGlanceController.m */; };
+		4E5467BC1A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467A41A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.m */; };
+		4E5467BD1A9F9F5F00A03287 /* GHSPullRequestNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467A81A9F9F5F00A03287 /* GHSPullRequestNotificationController.m */; };
+		4E5467BE1A9F9F5F00A03287 /* GHSNotificationMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467AA1A9F9F5F00A03287 /* GHSNotificationMainController.m */; };
+		4E5467BF1A9F9F5F00A03287 /* GHSFetchPullRequestList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467AE1A9F9F5F00A03287 /* GHSFetchPullRequestList.m */; };
+		4E5467C01A9F9F5F00A03287 /* GHSLoadPullRequestList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467B11A9F9F5F00A03287 /* GHSLoadPullRequestList.m */; };
+		4E5467C11A9F9F5F00A03287 /* GHSWatchKitNotificationsCollaborators.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467B41A9F9F5F00A03287 /* GHSWatchKitNotificationsCollaborators.m */; };
+		4E5467C41A9F9FDC00A03287 /* GHSSharedKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5467C21A9F9FDC00A03287 /* GHSSharedKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5467C51A9F9FDC00A03287 /* GHSSharedKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467C31A9F9FDC00A03287 /* GHSSharedKeys.m */; };
+		4E5467C81A9FA05D00A03287 /* GHSWatchKitExtensionHandOffKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467C71A9FA05D00A03287 /* GHSWatchKitExtensionHandOffKeys.m */; };
+		4E6B1CF21A9FE3E6008172E5 /* GHSReactiveGetUserRepositoriesStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B1CF11A9FE3E6008172E5 /* GHSReactiveGetUserRepositoriesStub.m */; };
+		4E7F92621A9FCF8E0077638F /* GHSUserRepositoriesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F92611A9FCF8E0077638F /* GHSUserRepositoriesTest.m */; };
+		4E7F928D1A9FDB1E0077638F /* GHSWatchKitExtensionServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F92831A9FDB1E0077638F /* GHSWatchKitExtensionServiceTest.m */; };
+		4E7F928E1A9FDB1E0077638F /* GHSAuthenticationEntityStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F92861A9FDB1E0077638F /* GHSAuthenticationEntityStub.m */; };
+		4E7F92911A9FDB1E0077638F /* GHSWatchKitExtensionServiceModuleStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F928C1A9FDB1E0077638F /* GHSWatchKitExtensionServiceModuleStub.m */; };
+		4EEFE7541A9F92D0005B7C7E /* fork.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFE7501A9F92D0005B7C7E /* fork.png */; };
+		4EEFE7551A9F92D0005B7C7E /* issue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFE7511A9F92D0005B7C7E /* issue.png */; };
+		4EEFE7561A9F92D0005B7C7E /* Octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFE7521A9F92D0005B7C7E /* Octocat.png */; };
+		4EEFE7571A9F92D0005B7C7E /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFE7531A9F92D0005B7C7E /* star.png */; };
+		5632D0E58708CEBE31DB4B0A /* libPods-GitHubStarsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C4D3B288D4B49D050A1E02 /* libPods-GitHubStarsTests.a */; };
+		948FC732CEE6215454617C36 /* libPods-GitHubStars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15F26A07438C260ECEA3F74 /* libPods-GitHubStars.a */; };
+		A545AA121AA0CFD500A6E8EC /* GitHubStarsCoreKitConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A545AA101AA0CFD500A6E8EC /* GitHubStarsCoreKitConfiguration.h */; };
+		A545AA131AA0CFD500A6E8EC /* GitHubStarsCoreKitConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A545AA111AA0CFD500A6E8EC /* GitHubStarsCoreKitConfiguration.m */; };
+		A5BA2EAE1A9E5DA80029DE57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BA2EAD1A9E5DA80029DE57 /* main.m */; };
+		A5BA2EB91A9E5DA80029DE57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BA2EB81A9E5DA80029DE57 /* Images.xcassets */; };
+		A5BA2EE41A9E5F580029DE57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BA2EE31A9E5F580029DE57 /* Images.xcassets */; };
+		A5BA2EE81A9E5F590029DE57 /* GitHubStars WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A5BA2EE71A9E5F590029DE57 /* GitHubStars WatchKit App.app */; };
+		A5BA2EF21A9E5F590029DE57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BA2EF11A9E5F590029DE57 /* Images.xcassets */; };
+		A5BA2EF51A9E5F590029DE57 /* GitHubStars WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5BA2ED51A9E5F580029DE57 /* GitHubStars WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5BA2F0D1A9E60580029DE57 /* GitHubStarsCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BA2F021A9E60580029DE57 /* GitHubStarsCoreKit.framework */; };
+		A5BA2F191A9E60580029DE57 /* GitHubStarsCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BA2F021A9E60580029DE57 /* GitHubStarsCoreKit.framework */; };
+		A5BA2F1A1A9E60580029DE57 /* GitHubStarsCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5BA2F021A9E60580029DE57 /* GitHubStarsCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5BA2F2C1A9E60900029DE57 /* GitHubStarsCommonsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A5BA2F2B1A9E60900029DE57 /* GitHubStarsCommonsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5BA2F3E1A9E60900029DE57 /* GitHubStarsCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BA2F271A9E60900029DE57 /* GitHubStarsCommonsKit.framework */; };
+		A5BA2F3F1A9E60900029DE57 /* GitHubStarsCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5BA2F271A9E60900029DE57 /* GitHubStarsCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5BA2EC21A9E5DA80029DE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5BA2EA01A9E5DA80029DE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BA2EA71A9E5DA80029DE57;
+			remoteInfo = GitHubStars;
+		};
+		A5BA2EE91A9E5F590029DE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5BA2EA01A9E5DA80029DE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BA2EE61A9E5F590029DE57;
+			remoteInfo = "GitHubStars WatchKit App";
+		};
+		A5BA2EF31A9E5F590029DE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5BA2EA01A9E5DA80029DE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BA2ED41A9E5F580029DE57;
+			remoteInfo = "GitHubStars WatchKit Extension";
+		};
+		A5BA2F0E1A9E60580029DE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5BA2EA01A9E5DA80029DE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BA2F011A9E60580029DE57;
+			remoteInfo = GitHubStarsCoreKit;
+		};
+		A5BA2F101A9E60580029DE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5BA2EA01A9E5DA80029DE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BA2EA71A9E5DA80029DE57;
+			remoteInfo = GitHubStars;
+		};
+		A5BA2F171A9E60580029DE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5BA2EA01A9E5DA80029DE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BA2F011A9E60580029DE57;
+			remoteInfo = GitHubStarsCoreKit;
+		};
+		A5BA2F3C1A9E60900029DE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5BA2EA01A9E5DA80029DE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BA2F261A9E60900029DE57;
+			remoteInfo = GitHubStarsCommonsKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5BA2EFC1A9E5F590029DE57 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5BA2EF51A9E5F590029DE57 /* GitHubStars WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2F1E1A9E60590029DE57 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5BA2F1A1A9E60580029DE57 /* GitHubStarsCoreKit.framework in Embed Frameworks */,
+				A5BA2F3F1A9E60900029DE57 /* GitHubStarsCommonsKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42739257D7FDFF4834ED8571 /* Pods-GitHubStars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStars.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GitHubStars/Pods-GitHubStars.debug.xcconfig"; sourceTree = "<group>"; };
+		4485A38D017BBFF04383DFCF /* Pods-GitHubStars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStars.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GitHubStars/Pods-GitHubStars.release.xcconfig"; sourceTree = "<group>"; };
+		4E3017321AA0B25E002D610E /* GHSRepositoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRepositoryCell.h; sourceTree = "<group>"; };
+		4E3017331AA0B25E002D610E /* GHSRepositoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRepositoryCell.m; sourceTree = "<group>"; };
+		4E3017381AA0C885002D610E /* TestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
+		4E3017391AA0C885002D610E /* TestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
+		4E53B1221A9FA40500585894 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		4E54669F1A9F981100A03287 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E5466A01A9F981100A03287 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E5466A31A9F981100A03287 /* GHSAuthenticationEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSAuthenticationEntity.h; sourceTree = "<group>"; };
+		4E5466A41A9F981100A03287 /* GHSAuthenticationEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSAuthenticationEntity.m; sourceTree = "<group>"; };
+		4E5466A51A9F981100A03287 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		4E5466A61A9F981100A03287 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		4E5466A81A9F981100A03287 /* GHSAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSAuthenticationViewController.h; sourceTree = "<group>"; };
+		4E5466A91A9F981100A03287 /* GHSAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSAuthenticationViewController.m; sourceTree = "<group>"; };
+		4E5466AB1A9F981100A03287 /* GHSAuthenticationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSAuthenticationViewModel.h; sourceTree = "<group>"; };
+		4E5466AC1A9F981100A03287 /* GHSAuthenticationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSAuthenticationViewModel.m; sourceTree = "<group>"; };
+		4E5466AE1A9F981100A03287 /* GHSViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSViewModel.h; sourceTree = "<group>"; };
+		4E5466AF1A9F981100A03287 /* GHSViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSViewModel.m; sourceTree = "<group>"; };
+		4E5466B01A9F981100A03287 /* GHSViewModelStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSViewModelStatus.h; sourceTree = "<group>"; };
+		4E5466B11A9F981100A03287 /* GHSViewModelStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSViewModelStatus.m; sourceTree = "<group>"; };
+		4E5466B31A9F981100A03287 /* GHSNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSNavigator.h; sourceTree = "<group>"; };
+		4E5466B41A9F981100A03287 /* GHSNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSNavigator.m; sourceTree = "<group>"; };
+		4E5466B61A9F981100A03287 /* GHSAuthenticationScreenNavigationRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSAuthenticationScreenNavigationRoute.h; sourceTree = "<group>"; };
+		4E5466B71A9F981100A03287 /* GHSAuthenticationScreenNavigationRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSAuthenticationScreenNavigationRoute.m; sourceTree = "<group>"; };
+		4E5466B81A9F981100A03287 /* GHSNavigationMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSNavigationMacros.h; sourceTree = "<group>"; };
+		4E5466B91A9F981100A03287 /* GHSNavigationRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSNavigationRoute.h; sourceTree = "<group>"; };
+		4E5466BA1A9F981100A03287 /* GHSNavigationRoutePlanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSNavigationRoutePlanner.h; sourceTree = "<group>"; };
+		4E5466BB1A9F981100A03287 /* GHSNavigationRoutePlanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSNavigationRoutePlanner.m; sourceTree = "<group>"; };
+		4E5466BC1A9F981100A03287 /* GHSPopViewControllerNavigationRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSPopViewControllerNavigationRoute.h; sourceTree = "<group>"; };
+		4E5466BD1A9F981100A03287 /* GHSPopViewControllerNavigationRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSPopViewControllerNavigationRoute.m; sourceTree = "<group>"; };
+		4E5466BE1A9F981100A03287 /* GHSRepoDetailScreenNavigationRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRepoDetailScreenNavigationRoute.h; sourceTree = "<group>"; };
+		4E5466BF1A9F981100A03287 /* GHSRepoDetailScreenNavigationRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRepoDetailScreenNavigationRoute.m; sourceTree = "<group>"; };
+		4E5466C01A9F981100A03287 /* GHSUserReposListScreenNavigationRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserReposListScreenNavigationRoute.h; sourceTree = "<group>"; };
+		4E5466C11A9F981100A03287 /* GHSUserReposListScreenNavigationRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserReposListScreenNavigationRoute.m; sourceTree = "<group>"; };
+		4E5466C51A9F981100A03287 /* GHSUserPullRequestNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserPullRequestNetwork.h; sourceTree = "<group>"; };
+		4E5466C61A9F981100A03287 /* GHSUserPullRequestNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserPullRequestNetwork.m; sourceTree = "<group>"; };
+		4E5466C81A9F981100A03287 /* GHSFetchUserPullRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSFetchUserPullRequest.h; sourceTree = "<group>"; };
+		4E5466C91A9F981100A03287 /* GHSFetchUserPullRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSFetchUserPullRequest.m; sourceTree = "<group>"; };
+		4E5466CA1A9F981100A03287 /* GHSReactiveGetUserPullRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSReactiveGetUserPullRequest.h; sourceTree = "<group>"; };
+		4E5466CB1A9F981100A03287 /* GHSReactiveGetUserPullRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSReactiveGetUserPullRequest.m; sourceTree = "<group>"; };
+		4E5466CE1A9F981100A03287 /* GHSRepositoryDetailNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRepositoryDetailNetwork.h; sourceTree = "<group>"; };
+		4E5466CF1A9F981100A03287 /* GHSRepositoryDetailNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRepositoryDetailNetwork.m; sourceTree = "<group>"; };
+		4E5466D11A9F981100A03287 /* GHSRepoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRepoDetailViewController.h; sourceTree = "<group>"; };
+		4E5466D21A9F981100A03287 /* GHSRepoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRepoDetailViewController.m; sourceTree = "<group>"; };
+		4E5466D51A9F981100A03287 /* GHSRepoSelectedContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRepoSelectedContext.h; sourceTree = "<group>"; };
+		4E5466D61A9F981100A03287 /* GHSRepoSelectedContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRepoSelectedContext.m; sourceTree = "<group>"; };
+		4E5466D71A9F981100A03287 /* GHSRepoDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRepoDetailViewModel.h; sourceTree = "<group>"; };
+		4E5466D81A9F981100A03287 /* GHSRepoDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRepoDetailViewModel.m; sourceTree = "<group>"; };
+		4E5466DB1A9F981100A03287 /* GHSRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRootViewController.h; sourceTree = "<group>"; };
+		4E5466DC1A9F981100A03287 /* GHSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRootViewController.m; sourceTree = "<group>"; };
+		4E5466DE1A9F981100A03287 /* GHSRootViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRootViewModel.h; sourceTree = "<group>"; };
+		4E5466DF1A9F981100A03287 /* GHSRootViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRootViewModel.m; sourceTree = "<group>"; };
+		4E5466E21A9F981100A03287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4E5466E41A9F981100A03287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E5466E81A9F981100A03287 /* GHSUserRepositoriesNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserRepositoriesNetwork.h; sourceTree = "<group>"; };
+		4E5466E91A9F981100A03287 /* GHSUserRepositoriesNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserRepositoriesNetwork.m; sourceTree = "<group>"; };
+		4E5466EA1A9F981100A03287 /* GHSUserRepositoriesStorage+Reactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHSUserRepositoriesStorage+Reactive.h"; sourceTree = "<group>"; };
+		4E5466EB1A9F981100A03287 /* GHSUserRepositoriesStorage+Reactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHSUserRepositoriesStorage+Reactive.m"; sourceTree = "<group>"; };
+		4E5466ED1A9F981100A03287 /* GHSFetchUserRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSFetchUserRepositories.h; sourceTree = "<group>"; };
+		4E5466EE1A9F981100A03287 /* GHSFetchUserRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSFetchUserRepositories.m; sourceTree = "<group>"; };
+		4E5466EF1A9F981100A03287 /* GHSLoadUserRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSLoadUserRepositories.h; sourceTree = "<group>"; };
+		4E5466F01A9F981100A03287 /* GHSLoadUserRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSLoadUserRepositories.m; sourceTree = "<group>"; };
+		4E5466F11A9F981100A03287 /* GHSReactiveGetUserRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSReactiveGetUserRepositories.h; sourceTree = "<group>"; };
+		4E5466F21A9F981100A03287 /* GHSReactiveGetUserRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSReactiveGetUserRepositories.m; sourceTree = "<group>"; };
+		4E5466F61A9F981100A03287 /* GHSUserReposListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserReposListViewController.h; sourceTree = "<group>"; };
+		4E5466F71A9F981100A03287 /* GHSUserReposListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserReposListViewController.m; sourceTree = "<group>"; };
+		4E5466F91A9F981100A03287 /* GHSUserInfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserInfoViewModel.h; sourceTree = "<group>"; };
+		4E5466FA1A9F981100A03287 /* GHSUserInfoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserInfoViewModel.m; sourceTree = "<group>"; };
+		4E5466FB1A9F981100A03287 /* GHSUserReposListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserReposListViewModel.h; sourceTree = "<group>"; };
+		4E5466FC1A9F981100A03287 /* GHSUserReposListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserReposListViewModel.m; sourceTree = "<group>"; };
+		4E5466FF1A9F981100A03287 /* GHSNotificationsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSNotificationsPresenter.h; sourceTree = "<group>"; };
+		4E5467001A9F981100A03287 /* GHSNotificationsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSNotificationsPresenter.m; sourceTree = "<group>"; };
+		4E5467011A9F981100A03287 /* GHSUserNotificationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserNotificationPresenter.h; sourceTree = "<group>"; };
+		4E5467021A9F981100A03287 /* GHSUserNotificationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserNotificationPresenter.m; sourceTree = "<group>"; };
+		4E5467041A9F981100A03287 /* GHSNotificationsRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSNotificationsRegister.h; sourceTree = "<group>"; };
+		4E5467051A9F981100A03287 /* GHSNotificationsRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSNotificationsRegister.m; sourceTree = "<group>"; };
+		4E5467081A9F981100A03287 /* GHSFakeApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSFakeApplication.h; sourceTree = "<group>"; };
+		4E5467091A9F981100A03287 /* GHSFakeApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSFakeApplication.m; sourceTree = "<group>"; };
+		4E54670A1A9F981100A03287 /* GHSFakePushNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSFakePushNotifications.h; sourceTree = "<group>"; };
+		4E54670B1A9F981100A03287 /* GHSFakePushNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSFakePushNotifications.m; sourceTree = "<group>"; };
+		4E54670C1A9F981100A03287 /* GHSRegisterPushNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRegisterPushNotifications.h; sourceTree = "<group>"; };
+		4E54670D1A9F981100A03287 /* GHSRegisterPushNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRegisterPushNotifications.m; sourceTree = "<group>"; };
+		4E54670E1A9F981100A03287 /* GHSRemoteNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRemoteNotifications.h; sourceTree = "<group>"; };
+		4E5467101A9F981100A03287 /* GHSNotificationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSNotificationSettings.h; sourceTree = "<group>"; };
+		4E5467111A9F981100A03287 /* GHSNotificationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSNotificationSettings.m; sourceTree = "<group>"; };
+		4E5467121A9F981100A03287 /* GHSRegisterUserNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRegisterUserNotifications.h; sourceTree = "<group>"; };
+		4E5467131A9F981100A03287 /* GHSRegisterUserNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRegisterUserNotifications.m; sourceTree = "<group>"; };
+		4E5467141A9F981100A03287 /* GHSUserNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserNotifications.h; sourceTree = "<group>"; };
+		4E5467161A9F981100A03287 /* GHSNotificationsModuleCollaboratos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSNotificationsModuleCollaboratos.h; sourceTree = "<group>"; };
+		4E5467171A9F981100A03287 /* GHSNotificationsModuleCollaboratos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSNotificationsModuleCollaboratos.m; sourceTree = "<group>"; };
+		4E5467191A9F981100A03287 /* GHSWatchKitExtensionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSWatchKitExtensionService.h; sourceTree = "<group>"; };
+		4E54671A1A9F981100A03287 /* GHSWatchKitExtensionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSWatchKitExtensionService.m; sourceTree = "<group>"; };
+		4E54671C1A9F981100A03287 /* GHSWatchKitExtensionServiceModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSWatchKitExtensionServiceModule.h; sourceTree = "<group>"; };
+		4E54671D1A9F981100A03287 /* GHSWatchKitExtensionServiceModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSWatchKitExtensionServiceModule.m; sourceTree = "<group>"; };
+		4E54674A1A9F9A5700A03287 /* GitHubStarsCoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubStarsCoreKit.h; sourceTree = "<group>"; };
+		4E54674C1A9F9A5700A03287 /* GHSSerializableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSSerializableModel.h; sourceTree = "<group>"; };
+		4E54674D1A9F9A5700A03287 /* GHSSerializableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSSerializableModel.m; sourceTree = "<group>"; };
+		4E54674E1A9F9A5700A03287 /* GHSSerializing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSSerializing.h; sourceTree = "<group>"; };
+		4E5467511A9F9A5700A03287 /* GHSPullRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSPullRequest.h; sourceTree = "<group>"; };
+		4E5467521A9F9A5700A03287 /* GHSPullRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSPullRequest.m; sourceTree = "<group>"; };
+		4E5467531A9F9A5700A03287 /* GHSUserPullRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserPullRequest.h; sourceTree = "<group>"; };
+		4E5467541A9F9A5700A03287 /* GHSUserPullRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserPullRequest.m; sourceTree = "<group>"; };
+		4E5467571A9F9A5700A03287 /* GHSUserPullRequestDefaultStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserPullRequestDefaultStorage.h; sourceTree = "<group>"; };
+		4E5467581A9F9A5700A03287 /* GHSUserPullRequestDefaultStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserPullRequestDefaultStorage.m; sourceTree = "<group>"; };
+		4E54675A1A9F9A5700A03287 /* GHSUserPullRequestFileStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserPullRequestFileStorage.h; sourceTree = "<group>"; };
+		4E54675B1A9F9A5700A03287 /* GHSUserPullRequestFileStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserPullRequestFileStorage.m; sourceTree = "<group>"; };
+		4E54675C1A9F9A5700A03287 /* GHSPullRequestAsyncStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSPullRequestAsyncStorage.h; sourceTree = "<group>"; };
+		4E54675D1A9F9A5700A03287 /* GHSPullRequestSyncStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSPullRequestSyncStorage.h; sourceTree = "<group>"; };
+		4E54675F1A9F9A5700A03287 /* GHSFileStorageCordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSFileStorageCordinator.h; sourceTree = "<group>"; };
+		4E5467601A9F9A5700A03287 /* GHSFileStorageCordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSFileStorageCordinator.m; sourceTree = "<group>"; };
+		4E5467611A9F9A5700A03287 /* GHSStorageCordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSStorageCordinator.h; sourceTree = "<group>"; };
+		4E5467621A9F9A5700A03287 /* GHSUserDefaultStorageCordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserDefaultStorageCordinator.h; sourceTree = "<group>"; };
+		4E5467631A9F9A5700A03287 /* GHSUserDefaultStorageCordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserDefaultStorageCordinator.m; sourceTree = "<group>"; };
+		4E5467661A9F9A5700A03287 /* GHSRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRepository.h; sourceTree = "<group>"; };
+		4E5467671A9F9A5700A03287 /* GHSRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRepository.m; sourceTree = "<group>"; };
+		4E5467681A9F9A5700A03287 /* GHSUserRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserRepositories.h; sourceTree = "<group>"; };
+		4E5467691A9F9A5700A03287 /* GHSUserRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserRepositories.m; sourceTree = "<group>"; };
+		4E54676B1A9F9A5700A03287 /* GHSUserRepositoriesStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSUserRepositoriesStorage.h; sourceTree = "<group>"; };
+		4E54676C1A9F9A5700A03287 /* GHSUserRepositoriesStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserRepositoriesStorage.m; sourceTree = "<group>"; };
+		4E5467861A9F9ECA00A03287 /* PullRequestPushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PullRequestPushNotificationPayload.apns; sourceTree = "<group>"; };
+		4E5467871A9F9ECA00A03287 /* StarsPushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StarsPushNotificationPayload.apns; sourceTree = "<group>"; };
+		4E54678F1A9F9F5F00A03287 /* GHSWatchStoryboardConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSWatchStoryboardConstants.h; sourceTree = "<group>"; };
+		4E5467901A9F9F5F00A03287 /* GHSWatchStoryboardConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSWatchStoryboardConstants.m; sourceTree = "<group>"; };
+		4E5467921A9F9F5F00A03287 /* GHSWatchPullRequestDetailsInterfazController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSWatchPullRequestDetailsInterfazController.h; sourceTree = "<group>"; };
+		4E5467931A9F9F5F00A03287 /* GHSWatchPullRequestDetailsInterfazController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSWatchPullRequestDetailsInterfazController.m; sourceTree = "<group>"; };
+		4E5467951A9F9F5F00A03287 /* GHSWatchMainInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSWatchMainInterfaceController.h; sourceTree = "<group>"; };
+		4E5467961A9F9F5F00A03287 /* GHSWatchMainInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSWatchMainInterfaceController.m; sourceTree = "<group>"; };
+		4E5467981A9F9F5F00A03287 /* GHSWathRepositoryDetailsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSWathRepositoryDetailsInterfaceController.h; sourceTree = "<group>"; };
+		4E5467991A9F9F5F00A03287 /* GHSWathRepositoryDetailsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSWathRepositoryDetailsInterfaceController.m; sourceTree = "<group>"; };
+		4E54679B1A9F9F5F00A03287 /* GHSListItemRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSListItemRowController.h; sourceTree = "<group>"; };
+		4E54679C1A9F9F5F00A03287 /* GHSListItemRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSListItemRowController.m; sourceTree = "<group>"; };
+		4E54679D1A9F9F5F00A03287 /* GHSRepositoryRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRepositoryRowController.h; sourceTree = "<group>"; };
+		4E54679E1A9F9F5F00A03287 /* GHSRepositoryRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRepositoryRowController.m; sourceTree = "<group>"; };
+		4E5467A01A9F9F5F00A03287 /* GHSGlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSGlanceController.h; sourceTree = "<group>"; };
+		4E5467A11A9F9F5F00A03287 /* GHSGlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSGlanceController.m; sourceTree = "<group>"; };
+		4E5467A31A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSStatefulGetUserRepositories.h; sourceTree = "<group>"; };
+		4E5467A41A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSStatefulGetUserRepositories.m; sourceTree = "<group>"; };
+		4E5467A71A9F9F5F00A03287 /* GHSPullRequestNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSPullRequestNotificationController.h; sourceTree = "<group>"; };
+		4E5467A81A9F9F5F00A03287 /* GHSPullRequestNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSPullRequestNotificationController.m; sourceTree = "<group>"; };
+		4E5467A91A9F9F5F00A03287 /* GHSNotificationMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSNotificationMainController.h; sourceTree = "<group>"; };
+		4E5467AA1A9F9F5F00A03287 /* GHSNotificationMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSNotificationMainController.m; sourceTree = "<group>"; };
+		4E5467AD1A9F9F5F00A03287 /* GHSFetchPullRequestList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSFetchPullRequestList.h; sourceTree = "<group>"; };
+		4E5467AE1A9F9F5F00A03287 /* GHSFetchPullRequestList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSFetchPullRequestList.m; sourceTree = "<group>"; };
+		4E5467B01A9F9F5F00A03287 /* GHSLoadPullRequestList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSLoadPullRequestList.h; sourceTree = "<group>"; };
+		4E5467B11A9F9F5F00A03287 /* GHSLoadPullRequestList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSLoadPullRequestList.m; sourceTree = "<group>"; };
+		4E5467B31A9F9F5F00A03287 /* GHSWatchKitNotificationsCollaborators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSWatchKitNotificationsCollaborators.h; sourceTree = "<group>"; };
+		4E5467B41A9F9F5F00A03287 /* GHSWatchKitNotificationsCollaborators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSWatchKitNotificationsCollaborators.m; sourceTree = "<group>"; };
+		4E5467C21A9F9FDC00A03287 /* GHSSharedKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSSharedKeys.h; sourceTree = "<group>"; };
+		4E5467C31A9F9FDC00A03287 /* GHSSharedKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSSharedKeys.m; sourceTree = "<group>"; };
+		4E5467C61A9FA05D00A03287 /* GHSWatchKitExtensionHandOffKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSWatchKitExtensionHandOffKeys.h; sourceTree = "<group>"; };
+		4E5467C71A9FA05D00A03287 /* GHSWatchKitExtensionHandOffKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSWatchKitExtensionHandOffKeys.m; sourceTree = "<group>"; };
+		4E6B1CF01A9FE3E6008172E5 /* GHSReactiveGetUserRepositoriesStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSReactiveGetUserRepositoriesStub.h; sourceTree = "<group>"; };
+		4E6B1CF11A9FE3E6008172E5 /* GHSReactiveGetUserRepositoriesStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSReactiveGetUserRepositoriesStub.m; sourceTree = "<group>"; };
+		4E7F92611A9FCF8E0077638F /* GHSUserRepositoriesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSUserRepositoriesTest.m; sourceTree = "<group>"; };
+		4E7F92831A9FDB1E0077638F /* GHSWatchKitExtensionServiceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSWatchKitExtensionServiceTest.m; sourceTree = "<group>"; };
+		4E7F92851A9FDB1E0077638F /* GHSAuthenticationEntityStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSAuthenticationEntityStub.h; sourceTree = "<group>"; };
+		4E7F92861A9FDB1E0077638F /* GHSAuthenticationEntityStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSAuthenticationEntityStub.m; sourceTree = "<group>"; };
+		4E7F928B1A9FDB1E0077638F /* GHSWatchKitExtensionServiceModuleStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHSWatchKitExtensionServiceModuleStub.h; path = TestDoubles/GHSWatchKitExtensionServiceModuleStub.h; sourceTree = "<group>"; };
+		4E7F928C1A9FDB1E0077638F /* GHSWatchKitExtensionServiceModuleStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHSWatchKitExtensionServiceModuleStub.m; path = TestDoubles/GHSWatchKitExtensionServiceModuleStub.m; sourceTree = "<group>"; };
+		4EEFE7501A9F92D0005B7C7E /* fork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fork.png; sourceTree = "<group>"; };
+		4EEFE7511A9F92D0005B7C7E /* issue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = issue.png; sourceTree = "<group>"; };
+		4EEFE7521A9F92D0005B7C7E /* Octocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Octocat.png; sourceTree = "<group>"; };
+		4EEFE7531A9F92D0005B7C7E /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		71C4D3B288D4B49D050A1E02 /* libPods-GitHubStarsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GitHubStarsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91213CCBC875A1AB372E0F29 /* Pods-GitHubStarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStarsTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GitHubStarsTests/Pods-GitHubStarsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A15F26A07438C260ECEA3F74 /* libPods-GitHubStars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GitHubStars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A545AA101AA0CFD500A6E8EC /* GitHubStarsCoreKitConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GitHubStarsCoreKitConfiguration.h; path = "Supporting Files/GitHubStarsCoreKitConfiguration.h"; sourceTree = "<group>"; };
+		A545AA111AA0CFD500A6E8EC /* GitHubStarsCoreKitConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GitHubStarsCoreKitConfiguration.m; path = "Supporting Files/GitHubStarsCoreKitConfiguration.m"; sourceTree = "<group>"; };
+		A5BA2EA81A9E5DA80029DE57 /* GitHubStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BA2EAC1A9E5DA80029DE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BA2EAD1A9E5DA80029DE57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5BA2EB81A9E5DA80029DE57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5BA2EC11A9E5DA80029DE57 /* GitHubStarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubStarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BA2EC61A9E5DA80029DE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BA2ED51A9E5F580029DE57 /* GitHubStars WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GitHubStars WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BA2ED81A9E5F580029DE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BA2EE31A9E5F580029DE57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5BA2EE71A9E5F590029DE57 /* GitHubStars WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHubStars WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BA2EED1A9E5F590029DE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BA2EF11A9E5F590029DE57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5BA2F021A9E60580029DE57 /* GitHubStarsCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GitHubStarsCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BA2F051A9E60580029DE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BA2F0C1A9E60580029DE57 /* GitHubStarsCoreKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubStarsCoreKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BA2F141A9E60580029DE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BA2F271A9E60900029DE57 /* GitHubStarsCommonsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GitHubStarsCommonsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BA2F2A1A9E60900029DE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BA2F2B1A9E60900029DE57 /* GitHubStarsCommonsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubStarsCommonsKit.h; sourceTree = "<group>"; };
+		A5BA2F391A9E60900029DE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9121C4BD85AE80351B988F2 /* Pods-GitHubStarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStarsTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GitHubStarsTests/Pods-GitHubStarsTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5BA2EA51A9E5DA80029DE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948FC732CEE6215454617C36 /* libPods-GitHubStars.a in Frameworks */,
+				A5BA2F3E1A9E60900029DE57 /* GitHubStarsCommonsKit.framework in Frameworks */,
+				A5BA2F191A9E60580029DE57 /* GitHubStarsCoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2EBE1A9E5DA80029DE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5632D0E58708CEBE31DB4B0A /* libPods-GitHubStarsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2ED21A9E5F580029DE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2EFE1A9E60580029DE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2F091A9E60580029DE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BA2F0D1A9E60580029DE57 /* GitHubStarsCoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2F231A9E60900029DE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0303C98EFAC642DA2D23B9E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42739257D7FDFF4834ED8571 /* Pods-GitHubStars.debug.xcconfig */,
+				4485A38D017BBFF04383DFCF /* Pods-GitHubStars.release.xcconfig */,
+				91213CCBC875A1AB372E0F29 /* Pods-GitHubStarsTests.debug.xcconfig */,
+				B9121C4BD85AE80351B988F2 /* Pods-GitHubStarsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E54669E1A9F981100A03287 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4E54669F1A9F981100A03287 /* AppDelegate.h */,
+				4E5466A01A9F981100A03287 /* AppDelegate.m */,
+				4E5466E01A9F981100A03287 /* UI */,
+				4E5466AD1A9F981100A03287 /* MvvM Foundation */,
+				4E5466B21A9F981100A03287 /* Navigation */,
+				4E5466D91A9F981100A03287 /* RootViewController */,
+				4E5466A11A9F981100A03287 /* Authentication */,
+				4E5466E51A9F981100A03287 /* User Repos List */,
+				4E5466CC1A9F981100A03287 /* Repo Detail */,
+				4E5466C21A9F981100A03287 /* Pull Request List */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4E5466A11A9F981100A03287 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466A71A9F981100A03287 /* View */,
+				4E5466AA1A9F981100A03287 /* ViewModel */,
+				4E5466A21A9F981100A03287 /* Model */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4E5466A21A9F981100A03287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466A31A9F981100A03287 /* GHSAuthenticationEntity.h */,
+				4E5466A41A9F981100A03287 /* GHSAuthenticationEntity.m */,
+				4E5466A51A9F981100A03287 /* KeychainItemWrapper.h */,
+				4E5466A61A9F981100A03287 /* KeychainItemWrapper.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E5466A71A9F981100A03287 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466A81A9F981100A03287 /* GHSAuthenticationViewController.h */,
+				4E5466A91A9F981100A03287 /* GHSAuthenticationViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E5466AA1A9F981100A03287 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466AB1A9F981100A03287 /* GHSAuthenticationViewModel.h */,
+				4E5466AC1A9F981100A03287 /* GHSAuthenticationViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E5466AD1A9F981100A03287 /* MvvM Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466AE1A9F981100A03287 /* GHSViewModel.h */,
+				4E5466AF1A9F981100A03287 /* GHSViewModel.m */,
+				4E5466B01A9F981100A03287 /* GHSViewModelStatus.h */,
+				4E5466B11A9F981100A03287 /* GHSViewModelStatus.m */,
+			);
+			path = "MvvM Foundation";
+			sourceTree = "<group>";
+		};
+		4E5466B21A9F981100A03287 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466B31A9F981100A03287 /* GHSNavigator.h */,
+				4E5466B41A9F981100A03287 /* GHSNavigator.m */,
+				4E5466B51A9F981100A03287 /* Navigation Routes */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		4E5466B51A9F981100A03287 /* Navigation Routes */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466B61A9F981100A03287 /* GHSAuthenticationScreenNavigationRoute.h */,
+				4E5466B71A9F981100A03287 /* GHSAuthenticationScreenNavigationRoute.m */,
+				4E5466B81A9F981100A03287 /* GHSNavigationMacros.h */,
+				4E5466B91A9F981100A03287 /* GHSNavigationRoute.h */,
+				4E5466BA1A9F981100A03287 /* GHSNavigationRoutePlanner.h */,
+				4E5466BB1A9F981100A03287 /* GHSNavigationRoutePlanner.m */,
+				4E5466BC1A9F981100A03287 /* GHSPopViewControllerNavigationRoute.h */,
+				4E5466BD1A9F981100A03287 /* GHSPopViewControllerNavigationRoute.m */,
+				4E5466BE1A9F981100A03287 /* GHSRepoDetailScreenNavigationRoute.h */,
+				4E5466BF1A9F981100A03287 /* GHSRepoDetailScreenNavigationRoute.m */,
+				4E5466C01A9F981100A03287 /* GHSUserReposListScreenNavigationRoute.h */,
+				4E5466C11A9F981100A03287 /* GHSUserReposListScreenNavigationRoute.m */,
+			);
+			path = "Navigation Routes";
+			sourceTree = "<group>";
+		};
+		4E5466C21A9F981100A03287 /* Pull Request List */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466C31A9F981100A03287 /* Model */,
+			);
+			path = "Pull Request List";
+			sourceTree = "<group>";
+		};
+		4E5466C31A9F981100A03287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466C41A9F981100A03287 /* Boundaries */,
+				4E5466C71A9F981100A03287 /* Interactors */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E5466C41A9F981100A03287 /* Boundaries */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466C51A9F981100A03287 /* GHSUserPullRequestNetwork.h */,
+				4E5466C61A9F981100A03287 /* GHSUserPullRequestNetwork.m */,
+			);
+			path = Boundaries;
+			sourceTree = "<group>";
+		};
+		4E5466C71A9F981100A03287 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466C81A9F981100A03287 /* GHSFetchUserPullRequest.h */,
+				4E5466C91A9F981100A03287 /* GHSFetchUserPullRequest.m */,
+				4E5466CA1A9F981100A03287 /* GHSReactiveGetUserPullRequest.h */,
+				4E5466CB1A9F981100A03287 /* GHSReactiveGetUserPullRequest.m */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		4E5466CC1A9F981100A03287 /* Repo Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466D01A9F981100A03287 /* View */,
+				4E5466D31A9F981100A03287 /* View Model */,
+				4E5466CD1A9F981100A03287 /* Model */,
+			);
+			path = "Repo Detail";
+			sourceTree = "<group>";
+		};
+		4E5466CD1A9F981100A03287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466CE1A9F981100A03287 /* GHSRepositoryDetailNetwork.h */,
+				4E5466CF1A9F981100A03287 /* GHSRepositoryDetailNetwork.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E5466D01A9F981100A03287 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466D11A9F981100A03287 /* GHSRepoDetailViewController.h */,
+				4E5466D21A9F981100A03287 /* GHSRepoDetailViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E5466D31A9F981100A03287 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466D41A9F981100A03287 /* Context */,
+				4E5466D71A9F981100A03287 /* GHSRepoDetailViewModel.h */,
+				4E5466D81A9F981100A03287 /* GHSRepoDetailViewModel.m */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		4E5466D41A9F981100A03287 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466D51A9F981100A03287 /* GHSRepoSelectedContext.h */,
+				4E5466D61A9F981100A03287 /* GHSRepoSelectedContext.m */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		4E5466D91A9F981100A03287 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466DA1A9F981100A03287 /* View */,
+				4E5466DD1A9F981100A03287 /* ViewModel */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		4E5466DA1A9F981100A03287 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466DB1A9F981100A03287 /* GHSRootViewController.h */,
+				4E5466DC1A9F981100A03287 /* GHSRootViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E5466DD1A9F981100A03287 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466DE1A9F981100A03287 /* GHSRootViewModel.h */,
+				4E5466DF1A9F981100A03287 /* GHSRootViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E5466E01A9F981100A03287 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466E11A9F981100A03287 /* LaunchScreen.xib */,
+				4E5466E31A9F981100A03287 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4E5466E51A9F981100A03287 /* User Repos List */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466F31A9F981100A03287 /* View */,
+				4E5466F81A9F981100A03287 /* ViewModel */,
+				4E5466E61A9F981100A03287 /* Model */,
+			);
+			path = "User Repos List";
+			sourceTree = "<group>";
+		};
+		4E5466E61A9F981100A03287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466EC1A9F981100A03287 /* Interactors */,
+				4E5466E71A9F981100A03287 /* Boundaries */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E5466E71A9F981100A03287 /* Boundaries */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466E81A9F981100A03287 /* GHSUserRepositoriesNetwork.h */,
+				4E5466E91A9F981100A03287 /* GHSUserRepositoriesNetwork.m */,
+				4E5466EA1A9F981100A03287 /* GHSUserRepositoriesStorage+Reactive.h */,
+				4E5466EB1A9F981100A03287 /* GHSUserRepositoriesStorage+Reactive.m */,
+			);
+			path = Boundaries;
+			sourceTree = "<group>";
+		};
+		4E5466EC1A9F981100A03287 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466F11A9F981100A03287 /* GHSReactiveGetUserRepositories.h */,
+				4E5466F21A9F981100A03287 /* GHSReactiveGetUserRepositories.m */,
+				4E5466EF1A9F981100A03287 /* GHSLoadUserRepositories.h */,
+				4E5466F01A9F981100A03287 /* GHSLoadUserRepositories.m */,
+				4E5466ED1A9F981100A03287 /* GHSFetchUserRepositories.h */,
+				4E5466EE1A9F981100A03287 /* GHSFetchUserRepositories.m */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		4E5466F31A9F981100A03287 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466F61A9F981100A03287 /* GHSUserReposListViewController.h */,
+				4E5466F71A9F981100A03287 /* GHSUserReposListViewController.m */,
+				4E3017321AA0B25E002D610E /* GHSRepositoryCell.h */,
+				4E3017331AA0B25E002D610E /* GHSRepositoryCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E5466F81A9F981100A03287 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466F91A9F981100A03287 /* GHSUserInfoViewModel.h */,
+				4E5466FA1A9F981100A03287 /* GHSUserInfoViewModel.m */,
+				4E5466FB1A9F981100A03287 /* GHSUserReposListViewModel.h */,
+				4E5466FC1A9F981100A03287 /* GHSUserReposListViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E5466FD1A9F981100A03287 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467151A9F981100A03287 /* Service Locator */,
+				4E5466FE1A9F981100A03287 /* Presenter */,
+				4E5467031A9F981100A03287 /* Register */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		4E5466FE1A9F981100A03287 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466FF1A9F981100A03287 /* GHSNotificationsPresenter.h */,
+				4E5467001A9F981100A03287 /* GHSNotificationsPresenter.m */,
+				4E5467011A9F981100A03287 /* GHSUserNotificationPresenter.h */,
+				4E5467021A9F981100A03287 /* GHSUserNotificationPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4E5467031A9F981100A03287 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467041A9F981100A03287 /* GHSNotificationsRegister.h */,
+				4E5467051A9F981100A03287 /* GHSNotificationsRegister.m */,
+				4E5467061A9F981100A03287 /* Interactor */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		4E5467061A9F981100A03287 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467071A9F981100A03287 /* RemoteNotifications */,
+				4E54670F1A9F981100A03287 /* UserNotifications */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4E5467071A9F981100A03287 /* RemoteNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467081A9F981100A03287 /* GHSFakeApplication.h */,
+				4E5467091A9F981100A03287 /* GHSFakeApplication.m */,
+				4E54670A1A9F981100A03287 /* GHSFakePushNotifications.h */,
+				4E54670B1A9F981100A03287 /* GHSFakePushNotifications.m */,
+				4E54670C1A9F981100A03287 /* GHSRegisterPushNotifications.h */,
+				4E54670D1A9F981100A03287 /* GHSRegisterPushNotifications.m */,
+				4E54670E1A9F981100A03287 /* GHSRemoteNotifications.h */,
+			);
+			path = RemoteNotifications;
+			sourceTree = "<group>";
+		};
+		4E54670F1A9F981100A03287 /* UserNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467101A9F981100A03287 /* GHSNotificationSettings.h */,
+				4E5467111A9F981100A03287 /* GHSNotificationSettings.m */,
+				4E5467121A9F981100A03287 /* GHSRegisterUserNotifications.h */,
+				4E5467131A9F981100A03287 /* GHSRegisterUserNotifications.m */,
+				4E5467141A9F981100A03287 /* GHSUserNotifications.h */,
+			);
+			path = UserNotifications;
+			sourceTree = "<group>";
+		};
+		4E5467151A9F981100A03287 /* Service Locator */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467161A9F981100A03287 /* GHSNotificationsModuleCollaboratos.h */,
+				4E5467171A9F981100A03287 /* GHSNotificationsModuleCollaboratos.m */,
+			);
+			path = "Service Locator";
+			sourceTree = "<group>";
+		};
+		4E5467181A9F981100A03287 /* WatchKitExtensionService */ = {
+			isa = PBXGroup;
+			children = (
+				4E54671B1A9F981100A03287 /* Service Locator */,
+				4E5467191A9F981100A03287 /* GHSWatchKitExtensionService.h */,
+				4E54671A1A9F981100A03287 /* GHSWatchKitExtensionService.m */,
+			);
+			path = WatchKitExtensionService;
+			sourceTree = "<group>";
+		};
+		4E54671B1A9F981100A03287 /* Service Locator */ = {
+			isa = PBXGroup;
+			children = (
+				4E54671C1A9F981100A03287 /* GHSWatchKitExtensionServiceModule.h */,
+				4E54671D1A9F981100A03287 /* GHSWatchKitExtensionServiceModule.m */,
+			);
+			path = "Service Locator";
+			sourceTree = "<group>";
+		};
+		4E54674B1A9F9A5700A03287 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				4E54674C1A9F9A5700A03287 /* GHSSerializableModel.h */,
+				4E54674D1A9F9A5700A03287 /* GHSSerializableModel.m */,
+				4E54674E1A9F9A5700A03287 /* GHSSerializing.h */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
+		4E54674F1A9F9A5700A03287 /* User PullRequest */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467501A9F9A5700A03287 /* Model */,
+				4E5467551A9F9A5700A03287 /* Storages */,
+			);
+			path = "User PullRequest";
+			sourceTree = "<group>";
+		};
+		4E5467501A9F9A5700A03287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467511A9F9A5700A03287 /* GHSPullRequest.h */,
+				4E5467521A9F9A5700A03287 /* GHSPullRequest.m */,
+				4E5467531A9F9A5700A03287 /* GHSUserPullRequest.h */,
+				4E5467541A9F9A5700A03287 /* GHSUserPullRequest.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E5467551A9F9A5700A03287 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467561A9F9A5700A03287 /* DefaultStorage */,
+				4E5467591A9F9A5700A03287 /* FileStorage */,
+				4E54675C1A9F9A5700A03287 /* GHSPullRequestAsyncStorage.h */,
+				4E54675D1A9F9A5700A03287 /* GHSPullRequestSyncStorage.h */,
+				4E54675E1A9F9A5700A03287 /* StorageCordinators */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		4E5467561A9F9A5700A03287 /* DefaultStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467571A9F9A5700A03287 /* GHSUserPullRequestDefaultStorage.h */,
+				4E5467581A9F9A5700A03287 /* GHSUserPullRequestDefaultStorage.m */,
+			);
+			path = DefaultStorage;
+			sourceTree = "<group>";
+		};
+		4E5467591A9F9A5700A03287 /* FileStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4E54675A1A9F9A5700A03287 /* GHSUserPullRequestFileStorage.h */,
+				4E54675B1A9F9A5700A03287 /* GHSUserPullRequestFileStorage.m */,
+			);
+			path = FileStorage;
+			sourceTree = "<group>";
+		};
+		4E54675E1A9F9A5700A03287 /* StorageCordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4E54675F1A9F9A5700A03287 /* GHSFileStorageCordinator.h */,
+				4E5467601A9F9A5700A03287 /* GHSFileStorageCordinator.m */,
+				4E5467611A9F9A5700A03287 /* GHSStorageCordinator.h */,
+				4E5467621A9F9A5700A03287 /* GHSUserDefaultStorageCordinator.h */,
+				4E5467631A9F9A5700A03287 /* GHSUserDefaultStorageCordinator.m */,
+			);
+			path = StorageCordinators;
+			sourceTree = "<group>";
+		};
+		4E5467641A9F9A5700A03287 /* User Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467651A9F9A5700A03287 /* Model */,
+				4E54676A1A9F9A5700A03287 /* Storage */,
+			);
+			path = "User Repositories";
+			sourceTree = "<group>";
+		};
+		4E5467651A9F9A5700A03287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467661A9F9A5700A03287 /* GHSRepository.h */,
+				4E5467671A9F9A5700A03287 /* GHSRepository.m */,
+				4E5467681A9F9A5700A03287 /* GHSUserRepositories.h */,
+				4E5467691A9F9A5700A03287 /* GHSUserRepositories.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E54676A1A9F9A5700A03287 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				4E54676B1A9F9A5700A03287 /* GHSUserRepositoriesStorage.h */,
+				4E54676C1A9F9A5700A03287 /* GHSUserRepositoriesStorage.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		4E54678E1A9F9F5F00A03287 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4E54678F1A9F9F5F00A03287 /* GHSWatchStoryboardConstants.h */,
+				4E5467901A9F9F5F00A03287 /* GHSWatchStoryboardConstants.m */,
+				4E5467941A9F9F5F00A03287 /* Main Interface */,
+				4E5467971A9F9F5F00A03287 /* Repository Detail */,
+				4E5467911A9F9F5F00A03287 /* Pull Request Detail */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4E5467911A9F9F5F00A03287 /* Pull Request Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467921A9F9F5F00A03287 /* GHSWatchPullRequestDetailsInterfazController.h */,
+				4E5467931A9F9F5F00A03287 /* GHSWatchPullRequestDetailsInterfazController.m */,
+			);
+			path = "Pull Request Detail";
+			sourceTree = "<group>";
+		};
+		4E5467941A9F9F5F00A03287 /* Main Interface */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467951A9F9F5F00A03287 /* GHSWatchMainInterfaceController.h */,
+				4E5467961A9F9F5F00A03287 /* GHSWatchMainInterfaceController.m */,
+				4E54679A1A9F9F5F00A03287 /* Row Controllers */,
+			);
+			name = "Main Interface";
+			path = "Repositories List";
+			sourceTree = "<group>";
+		};
+		4E5467971A9F9F5F00A03287 /* Repository Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467981A9F9F5F00A03287 /* GHSWathRepositoryDetailsInterfaceController.h */,
+				4E5467991A9F9F5F00A03287 /* GHSWathRepositoryDetailsInterfaceController.m */,
+			);
+			path = "Repository Detail";
+			sourceTree = "<group>";
+		};
+		4E54679A1A9F9F5F00A03287 /* Row Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E54679B1A9F9F5F00A03287 /* GHSListItemRowController.h */,
+				4E54679C1A9F9F5F00A03287 /* GHSListItemRowController.m */,
+				4E54679D1A9F9F5F00A03287 /* GHSRepositoryRowController.h */,
+				4E54679E1A9F9F5F00A03287 /* GHSRepositoryRowController.m */,
+			);
+			name = "Row Controllers";
+			path = "../Row Controllers";
+			sourceTree = "<group>";
+		};
+		4E54679F1A9F9F5F00A03287 /* Glance */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467A01A9F9F5F00A03287 /* GHSGlanceController.h */,
+				4E5467A11A9F9F5F00A03287 /* GHSGlanceController.m */,
+				4E5467A21A9F9F5F00A03287 /* Interactors */,
+			);
+			path = Glance;
+			sourceTree = "<group>";
+		};
+		4E5467A21A9F9F5F00A03287 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467A31A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.h */,
+				4E5467A41A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.m */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		4E5467A51A9F9F5F00A03287 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467A61A9F9F5F00A03287 /* Dinamic UI */,
+				4E5467A91A9F9F5F00A03287 /* GHSNotificationMainController.h */,
+				4E5467AA1A9F9F5F00A03287 /* GHSNotificationMainController.m */,
+				4E5467AB1A9F9F5F00A03287 /* Interactors */,
+				4E5467B21A9F9F5F00A03287 /* NotificationsModuleCollaborators */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		4E5467A61A9F9F5F00A03287 /* Dinamic UI */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467A71A9F9F5F00A03287 /* GHSPullRequestNotificationController.h */,
+				4E5467A81A9F9F5F00A03287 /* GHSPullRequestNotificationController.m */,
+			);
+			path = "Dinamic UI";
+			sourceTree = "<group>";
+		};
+		4E5467AB1A9F9F5F00A03287 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467AC1A9F9F5F00A03287 /* FetchPullRequest */,
+				4E5467AF1A9F9F5F00A03287 /* LocalPullRequest */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		4E5467AC1A9F9F5F00A03287 /* FetchPullRequest */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467AD1A9F9F5F00A03287 /* GHSFetchPullRequestList.h */,
+				4E5467AE1A9F9F5F00A03287 /* GHSFetchPullRequestList.m */,
+			);
+			path = FetchPullRequest;
+			sourceTree = "<group>";
+		};
+		4E5467AF1A9F9F5F00A03287 /* LocalPullRequest */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467B01A9F9F5F00A03287 /* GHSLoadPullRequestList.h */,
+				4E5467B11A9F9F5F00A03287 /* GHSLoadPullRequestList.m */,
+			);
+			path = LocalPullRequest;
+			sourceTree = "<group>";
+		};
+		4E5467B21A9F9F5F00A03287 /* NotificationsModuleCollaborators */ = {
+			isa = PBXGroup;
+			children = (
+				4E5467B31A9F9F5F00A03287 /* GHSWatchKitNotificationsCollaborators.h */,
+				4E5467B41A9F9F5F00A03287 /* GHSWatchKitNotificationsCollaborators.m */,
+			);
+			path = NotificationsModuleCollaborators;
+			sourceTree = "<group>";
+		};
+		4E5467CC1A9FA09800A03287 /* Shared Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Shared Assets";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E6B1CEF1A9FDFDD008172E5 /* Service Locator */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F928B1A9FDB1E0077638F /* GHSWatchKitExtensionServiceModuleStub.h */,
+				4E7F928C1A9FDB1E0077638F /* GHSWatchKitExtensionServiceModuleStub.m */,
+			);
+			name = "Service Locator";
+			sourceTree = "<group>";
+		};
+		4E7F92821A9FDB1E0077638F /* WatchKitExtensionService */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F92831A9FDB1E0077638F /* GHSWatchKitExtensionServiceTest.m */,
+				4E6B1CEF1A9FDFDD008172E5 /* Service Locator */,
+				4E7F92841A9FDB1E0077638F /* TestDoubles */,
+			);
+			path = WatchKitExtensionService;
+			sourceTree = "<group>";
+		};
+		4E7F92841A9FDB1E0077638F /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F92851A9FDB1E0077638F /* GHSAuthenticationEntityStub.h */,
+				4E7F92861A9FDB1E0077638F /* GHSAuthenticationEntityStub.m */,
+				4E6B1CF01A9FE3E6008172E5 /* GHSReactiveGetUserRepositoriesStub.h */,
+				4E6B1CF11A9FE3E6008172E5 /* GHSReactiveGetUserRepositoriesStub.m */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		90D07FEE686C4AB89942D0CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A15F26A07438C260ECEA3F74 /* libPods-GitHubStars.a */,
+				71C4D3B288D4B49D050A1E02 /* libPods-GitHubStarsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A545AA141AA0CFF300A6E8EC /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A545AA101AA0CFD500A6E8EC /* GitHubStarsCoreKitConfiguration.h */,
+				A545AA111AA0CFD500A6E8EC /* GitHubStarsCoreKitConfiguration.m */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		A5BA2E9F1A9E5DA80029DE57 = {
+			isa = PBXGroup;
+			children = (
+				A5BA2EAA1A9E5DA80029DE57 /* GitHubStars iOS  */,
+				A5BA2EC41A9E5DA80029DE57 /* GitHubStars iOS Tests */,
+				A5BA2ED61A9E5F580029DE57 /* GitHubStars WatchKit Extension */,
+				A5BA2EEB1A9E5F590029DE57 /* GitHubStars WatchKit App */,
+				A5BA2F031A9E60580029DE57 /* GitHubStarsCoreKit */,
+				A5BA2F121A9E60580029DE57 /* GitHubStarsCoreKitTests */,
+				A5BA2F281A9E60900029DE57 /* GitHubStarsCommonsKit */,
+				A5BA2F371A9E60900029DE57 /* GitHubStarsCommonsKitTests */,
+				A5BA2EA91A9E5DA80029DE57 /* Products */,
+				0303C98EFAC642DA2D23B9E8 /* Pods */,
+				90D07FEE686C4AB89942D0CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5BA2EA91A9E5DA80029DE57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2EA81A9E5DA80029DE57 /* GitHubStars.app */,
+				A5BA2EC11A9E5DA80029DE57 /* GitHubStarsTests.xctest */,
+				A5BA2ED51A9E5F580029DE57 /* GitHubStars WatchKit Extension.appex */,
+				A5BA2EE71A9E5F590029DE57 /* GitHubStars WatchKit App.app */,
+				A5BA2F021A9E60580029DE57 /* GitHubStarsCoreKit.framework */,
+				A5BA2F0C1A9E60580029DE57 /* GitHubStarsCoreKitTests.xctest */,
+				A5BA2F271A9E60900029DE57 /* GitHubStarsCommonsKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5BA2EAA1A9E5DA80029DE57 /* GitHubStars iOS  */ = {
+			isa = PBXGroup;
+			children = (
+				4E54669E1A9F981100A03287 /* App */,
+				4E5466FD1A9F981100A03287 /* Notifications */,
+				4E5467181A9F981100A03287 /* WatchKitExtensionService */,
+				A5BA2EAB1A9E5DA80029DE57 /* Supporting Files */,
+			);
+			path = "GitHubStars iOS ";
+			sourceTree = "<group>";
+		};
+		A5BA2EAB1A9E5DA80029DE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2EB81A9E5DA80029DE57 /* Images.xcassets */,
+				4EEFE7501A9F92D0005B7C7E /* fork.png */,
+				4EEFE7511A9F92D0005B7C7E /* issue.png */,
+				4EEFE7521A9F92D0005B7C7E /* Octocat.png */,
+				4EEFE7531A9F92D0005B7C7E /* star.png */,
+				A5BA2EAC1A9E5DA80029DE57 /* Info.plist */,
+				A5BA2EAD1A9E5DA80029DE57 /* main.m */,
+				4E3017381AA0C885002D610E /* TestAppDelegate.h */,
+				4E3017391AA0C885002D610E /* TestAppDelegate.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5BA2EC41A9E5DA80029DE57 /* GitHubStars iOS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F92821A9FDB1E0077638F /* WatchKitExtensionService */,
+				A5BA2EC51A9E5DA80029DE57 /* Supporting Files */,
+			);
+			path = "GitHubStars iOS Tests";
+			sourceTree = "<group>";
+		};
+		A5BA2EC51A9E5DA80029DE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2EC61A9E5DA80029DE57 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5BA2ED61A9E5F580029DE57 /* GitHubStars WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4E54678E1A9F9F5F00A03287 /* App */,
+				4E54679F1A9F9F5F00A03287 /* Glance */,
+				4E5467A51A9F9F5F00A03287 /* Notifications */,
+				A5BA2ED71A9E5F580029DE57 /* Supporting Files */,
+			);
+			path = "GitHubStars WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A5BA2ED71A9E5F580029DE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2EE31A9E5F580029DE57 /* Images.xcassets */,
+				A5BA2ED81A9E5F580029DE57 /* Info.plist */,
+				4E5467C61A9FA05D00A03287 /* GHSWatchKitExtensionHandOffKeys.h */,
+				4E5467C71A9FA05D00A03287 /* GHSWatchKitExtensionHandOffKeys.m */,
+				4E5467861A9F9ECA00A03287 /* PullRequestPushNotificationPayload.apns */,
+				4E5467871A9F9ECA00A03287 /* StarsPushNotificationPayload.apns */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5BA2EEB1A9E5F590029DE57 /* GitHubStars WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4E53B1221A9FA40500585894 /* Interface.storyboard */,
+				A5BA2EF11A9E5F590029DE57 /* Images.xcassets */,
+				A5BA2EEC1A9E5F590029DE57 /* Supporting Files */,
+			);
+			path = "GitHubStars WatchKit App";
+			sourceTree = "<group>";
+		};
+		A5BA2EEC1A9E5F590029DE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2EED1A9E5F590029DE57 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5BA2F031A9E60580029DE57 /* GitHubStarsCoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				4E54674A1A9F9A5700A03287 /* GitHubStarsCoreKit.h */,
+				A545AA141AA0CFF300A6E8EC /* Configuration */,
+				4E54674B1A9F9A5700A03287 /* Serialization */,
+				4E5467641A9F9A5700A03287 /* User Repositories */,
+				4E54674F1A9F9A5700A03287 /* User PullRequest */,
+				A5BA2F041A9E60580029DE57 /* Supporting Files */,
+			);
+			path = GitHubStarsCoreKit;
+			sourceTree = "<group>";
+		};
+		A5BA2F041A9E60580029DE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2F051A9E60580029DE57 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5BA2F121A9E60580029DE57 /* GitHubStarsCoreKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F92611A9FCF8E0077638F /* GHSUserRepositoriesTest.m */,
+				A5BA2F131A9E60580029DE57 /* Supporting Files */,
+			);
+			path = GitHubStarsCoreKitTests;
+			sourceTree = "<group>";
+		};
+		A5BA2F131A9E60580029DE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2F141A9E60580029DE57 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5BA2F281A9E60900029DE57 /* GitHubStarsCommonsKit */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2F2B1A9E60900029DE57 /* GitHubStarsCommonsKit.h */,
+				4E5467C21A9F9FDC00A03287 /* GHSSharedKeys.h */,
+				4E5467C31A9F9FDC00A03287 /* GHSSharedKeys.m */,
+				4E5467CC1A9FA09800A03287 /* Shared Assets */,
+				A5BA2F291A9E60900029DE57 /* Supporting Files */,
+			);
+			path = GitHubStarsCommonsKit;
+			sourceTree = "<group>";
+		};
+		A5BA2F291A9E60900029DE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2F2A1A9E60900029DE57 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5BA2F371A9E60900029DE57 /* GitHubStarsCommonsKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2F381A9E60900029DE57 /* Supporting Files */,
+			);
+			path = GitHubStarsCommonsKitTests;
+			sourceTree = "<group>";
+		};
+		A5BA2F381A9E60900029DE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2F391A9E60900029DE57 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A5BA2EFF1A9E60580029DE57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A545AA121AA0CFD500A6E8EC /* GitHubStarsCoreKitConfiguration.h in Headers */,
+				4E54676D1A9F9A5700A03287 /* GitHubStarsCoreKit.h in Headers */,
+				4E5467821A9F9A5700A03287 /* GHSUserRepositories.h in Headers */,
+				4E5467801A9F9A5700A03287 /* GHSRepository.h in Headers */,
+				4E5467841A9F9A5700A03287 /* GHSUserRepositoriesStorage.h in Headers */,
+				4E5467711A9F9A5700A03287 /* GHSPullRequest.h in Headers */,
+				4E54676E1A9F9A5700A03287 /* GHSSerializableModel.h in Headers */,
+				4E54677E1A9F9A5700A03287 /* GHSUserDefaultStorageCordinator.h in Headers */,
+				4E54677A1A9F9A5700A03287 /* GHSPullRequestSyncStorage.h in Headers */,
+				4E5467771A9F9A5700A03287 /* GHSUserPullRequestFileStorage.h in Headers */,
+				4E5467751A9F9A5700A03287 /* GHSUserPullRequestDefaultStorage.h in Headers */,
+				4E54677D1A9F9A5700A03287 /* GHSStorageCordinator.h in Headers */,
+				4E5467791A9F9A5700A03287 /* GHSPullRequestAsyncStorage.h in Headers */,
+				4E5467731A9F9A5700A03287 /* GHSUserPullRequest.h in Headers */,
+				4E54677B1A9F9A5700A03287 /* GHSFileStorageCordinator.h in Headers */,
+				4E5467701A9F9A5700A03287 /* GHSSerializing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2F241A9E60900029DE57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BA2F2C1A9E60900029DE57 /* GitHubStarsCommonsKit.h in Headers */,
+				4E5467C41A9F9FDC00A03287 /* GHSSharedKeys.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A5BA2EA71A9E5DA80029DE57 /* GitHubStars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BA2ECB1A9E5DA80029DE57 /* Build configuration list for PBXNativeTarget "GitHubStars" */;
+			buildPhases = (
+				278A0D169756F54A2C87570B /* Check Pods Manifest.lock */,
+				A5BA2EA41A9E5DA80029DE57 /* Sources */,
+				A5BA2EA51A9E5DA80029DE57 /* Frameworks */,
+				A5BA2EA61A9E5DA80029DE57 /* Resources */,
+				87EF3EEBE301DDB7DC125ADE /* Copy Pods Resources */,
+				A5BA2EFC1A9E5F590029DE57 /* Embed App Extensions */,
+				A5BA2F1E1A9E60590029DE57 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5BA2EF41A9E5F590029DE57 /* PBXTargetDependency */,
+				A5BA2F181A9E60580029DE57 /* PBXTargetDependency */,
+				A5BA2F3D1A9E60900029DE57 /* PBXTargetDependency */,
+			);
+			name = GitHubStars;
+			productName = GitHubStars;
+			productReference = A5BA2EA81A9E5DA80029DE57 /* GitHubStars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5BA2EC01A9E5DA80029DE57 /* GitHubStarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BA2ECE1A9E5DA80029DE57 /* Build configuration list for PBXNativeTarget "GitHubStarsTests" */;
+			buildPhases = (
+				2F9749D9FC2A70C8813F9D84 /* Check Pods Manifest.lock */,
+				A5BA2EBD1A9E5DA80029DE57 /* Sources */,
+				A5BA2EBE1A9E5DA80029DE57 /* Frameworks */,
+				A5BA2EBF1A9E5DA80029DE57 /* Resources */,
+				151A3A8C4F18225ECDC723CE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5BA2EC31A9E5DA80029DE57 /* PBXTargetDependency */,
+			);
+			name = GitHubStarsTests;
+			productName = GitHubStarsTests;
+			productReference = A5BA2EC11A9E5DA80029DE57 /* GitHubStarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5BA2ED41A9E5F580029DE57 /* GitHubStars WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BA2EFB1A9E5F590029DE57 /* Build configuration list for PBXNativeTarget "GitHubStars WatchKit Extension" */;
+			buildPhases = (
+				A5BA2ED11A9E5F580029DE57 /* Sources */,
+				A5BA2ED21A9E5F580029DE57 /* Frameworks */,
+				A5BA2ED31A9E5F580029DE57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5BA2EEA1A9E5F590029DE57 /* PBXTargetDependency */,
+			);
+			name = "GitHubStars WatchKit Extension";
+			productName = "GitHubStars WatchKit Extension";
+			productReference = A5BA2ED51A9E5F580029DE57 /* GitHubStars WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A5BA2EE61A9E5F590029DE57 /* GitHubStars WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BA2EFA1A9E5F590029DE57 /* Build configuration list for PBXNativeTarget "GitHubStars WatchKit App" */;
+			buildPhases = (
+				A5BA2EE51A9E5F590029DE57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GitHubStars WatchKit App";
+			productName = "GitHubStars WatchKit App";
+			productReference = A5BA2EE71A9E5F590029DE57 /* GitHubStars WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		A5BA2F011A9E60580029DE57 /* GitHubStarsCoreKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BA2F1B1A9E60590029DE57 /* Build configuration list for PBXNativeTarget "GitHubStarsCoreKit" */;
+			buildPhases = (
+				A5BA2EFD1A9E60580029DE57 /* Sources */,
+				A5BA2EFE1A9E60580029DE57 /* Frameworks */,
+				A5BA2EFF1A9E60580029DE57 /* Headers */,
+				A5BA2F001A9E60580029DE57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitHubStarsCoreKit;
+			productName = GitHubStarsCoreKit;
+			productReference = A5BA2F021A9E60580029DE57 /* GitHubStarsCoreKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5BA2F0B1A9E60580029DE57 /* GitHubStarsCoreKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BA2F1F1A9E60590029DE57 /* Build configuration list for PBXNativeTarget "GitHubStarsCoreKitTests" */;
+			buildPhases = (
+				A5BA2F081A9E60580029DE57 /* Sources */,
+				A5BA2F091A9E60580029DE57 /* Frameworks */,
+				A5BA2F0A1A9E60580029DE57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5BA2F0F1A9E60580029DE57 /* PBXTargetDependency */,
+				A5BA2F111A9E60580029DE57 /* PBXTargetDependency */,
+			);
+			name = GitHubStarsCoreKitTests;
+			productName = GitHubStarsCoreKitTests;
+			productReference = A5BA2F0C1A9E60580029DE57 /* GitHubStarsCoreKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5BA2F261A9E60900029DE57 /* GitHubStarsCommonsKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BA2F401A9E60900029DE57 /* Build configuration list for PBXNativeTarget "GitHubStarsCommonsKit" */;
+			buildPhases = (
+				A5BA2F221A9E60900029DE57 /* Sources */,
+				A5BA2F231A9E60900029DE57 /* Frameworks */,
+				A5BA2F241A9E60900029DE57 /* Headers */,
+				A5BA2F251A9E60900029DE57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitHubStarsCommonsKit;
+			productName = GitHubStarsCommonsKit;
+			productReference = A5BA2F271A9E60900029DE57 /* GitHubStarsCommonsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5BA2EA01A9E5DA80029DE57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Tuenti Technologies";
+				TargetAttributes = {
+					A5BA2EA71A9E5DA80029DE57 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 2W7Q5LPE7R;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A5BA2EC01A9E5DA80029DE57 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = A5BA2EA71A9E5DA80029DE57;
+					};
+					A5BA2ED41A9E5F580029DE57 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 2W7Q5LPE7R;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A5BA2EE61A9E5F590029DE57 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					A5BA2F011A9E60580029DE57 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					A5BA2F0B1A9E60580029DE57 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = A5BA2EA71A9E5DA80029DE57;
+					};
+					A5BA2F261A9E60900029DE57 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = A5BA2EA31A9E5DA80029DE57 /* Build configuration list for PBXProject "GitHubStars" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5BA2E9F1A9E5DA80029DE57;
+			productRefGroup = A5BA2EA91A9E5DA80029DE57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5BA2EA71A9E5DA80029DE57 /* GitHubStars */,
+				A5BA2EC01A9E5DA80029DE57 /* GitHubStarsTests */,
+				A5BA2ED41A9E5F580029DE57 /* GitHubStars WatchKit Extension */,
+				A5BA2EE61A9E5F590029DE57 /* GitHubStars WatchKit App */,
+				A5BA2F011A9E60580029DE57 /* GitHubStarsCoreKit */,
+				A5BA2F0B1A9E60580029DE57 /* GitHubStarsCoreKitTests */,
+				A5BA2F261A9E60900029DE57 /* GitHubStarsCommonsKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5BA2EA61A9E5DA80029DE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EEFE7561A9F92D0005B7C7E /* Octocat.png in Resources */,
+				4EEFE7541A9F92D0005B7C7E /* fork.png in Resources */,
+				4E5467341A9F981100A03287 /* LaunchScreen.xib in Resources */,
+				4EEFE7571A9F92D0005B7C7E /* star.png in Resources */,
+				4E5467351A9F981100A03287 /* Main.storyboard in Resources */,
+				A5BA2EB91A9E5DA80029DE57 /* Images.xcassets in Resources */,
+				4EEFE7551A9F92D0005B7C7E /* issue.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2EBF1A9E5DA80029DE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2ED31A9E5F580029DE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BA2EE41A9E5F580029DE57 /* Images.xcassets in Resources */,
+				4E5467891A9F9ECA00A03287 /* StarsPushNotificationPayload.apns in Resources */,
+				A5BA2EE81A9E5F590029DE57 /* GitHubStars WatchKit App.app in Resources */,
+				4E5467881A9F9ECA00A03287 /* PullRequestPushNotificationPayload.apns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2EE51A9E5F590029DE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E53B1231A9FA40500585894 /* Interface.storyboard in Resources */,
+				A5BA2EF21A9E5F590029DE57 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2F001A9E60580029DE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2F0A1A9E60580029DE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2F251A9E60900029DE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		151A3A8C4F18225ECDC723CE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GitHubStarsTests/Pods-GitHubStarsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		278A0D169756F54A2C87570B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2F9749D9FC2A70C8813F9D84 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87EF3EEBE301DDB7DC125ADE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GitHubStars/Pods-GitHubStars-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5BA2EA41A9E5DA80029DE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E54673C1A9F981100A03287 /* GHSUserReposListViewController.m in Sources */,
+				4E5467201A9F981100A03287 /* KeychainItemWrapper.m in Sources */,
+				4E5467391A9F981100A03287 /* GHSLoadUserRepositories.m in Sources */,
+				4E30173A1AA0C885002D610E /* TestAppDelegate.m in Sources */,
+				4E54673A1A9F981100A03287 /* GHSReactiveGetUserRepositories.m in Sources */,
+				4E5467311A9F981100A03287 /* GHSRepoDetailViewModel.m in Sources */,
+				4E5467331A9F981100A03287 /* GHSRootViewModel.m in Sources */,
+				4E5467491A9F981100A03287 /* GHSWatchKitExtensionServiceModule.m in Sources */,
+				4E54673D1A9F981100A03287 /* GHSUserInfoViewModel.m in Sources */,
+				4E54672A1A9F981100A03287 /* GHSUserReposListScreenNavigationRoute.m in Sources */,
+				4E54673E1A9F981100A03287 /* GHSUserReposListViewModel.m in Sources */,
+				4E5467461A9F981100A03287 /* GHSRegisterUserNotifications.m in Sources */,
+				4E5467451A9F981100A03287 /* GHSNotificationSettings.m in Sources */,
+				4E5467431A9F981100A03287 /* GHSFakePushNotifications.m in Sources */,
+				4E5467251A9F981100A03287 /* GHSNavigator.m in Sources */,
+				4E5467261A9F981100A03287 /* GHSAuthenticationScreenNavigationRoute.m in Sources */,
+				4E5467381A9F981100A03287 /* GHSFetchUserRepositories.m in Sources */,
+				4E5467421A9F981100A03287 /* GHSFakeApplication.m in Sources */,
+				4E5467441A9F981100A03287 /* GHSRegisterPushNotifications.m in Sources */,
+				4E5467321A9F981100A03287 /* GHSRootViewController.m in Sources */,
+				4E5467241A9F981100A03287 /* GHSViewModelStatus.m in Sources */,
+				4E54672C1A9F981100A03287 /* GHSFetchUserPullRequest.m in Sources */,
+				4E6B1CF21A9FE3E6008172E5 /* GHSReactiveGetUserRepositoriesStub.m in Sources */,
+				4E5467471A9F981100A03287 /* GHSNotificationsModuleCollaboratos.m in Sources */,
+				4E5467411A9F981100A03287 /* GHSNotificationsRegister.m in Sources */,
+				4E54671E1A9F981100A03287 /* AppDelegate.m in Sources */,
+				4E5467231A9F981100A03287 /* GHSViewModel.m in Sources */,
+				4E5467291A9F981100A03287 /* GHSRepoDetailScreenNavigationRoute.m in Sources */,
+				4E5467301A9F981100A03287 /* GHSRepoSelectedContext.m in Sources */,
+				4E5467271A9F981100A03287 /* GHSNavigationRoutePlanner.m in Sources */,
+				4E5467281A9F981100A03287 /* GHSPopViewControllerNavigationRoute.m in Sources */,
+				4E3017341AA0B25E002D610E /* GHSRepositoryCell.m in Sources */,
+				4E5467211A9F981100A03287 /* GHSAuthenticationViewController.m in Sources */,
+				4E5467221A9F981100A03287 /* GHSAuthenticationViewModel.m in Sources */,
+				4E54672B1A9F981100A03287 /* GHSUserPullRequestNetwork.m in Sources */,
+				4E5467361A9F981100A03287 /* GHSUserRepositoriesNetwork.m in Sources */,
+				4E5467481A9F981100A03287 /* GHSWatchKitExtensionService.m in Sources */,
+				4E54673F1A9F981100A03287 /* GHSNotificationsPresenter.m in Sources */,
+				4E5467401A9F981100A03287 /* GHSUserNotificationPresenter.m in Sources */,
+				4E54672E1A9F981100A03287 /* GHSRepositoryDetailNetwork.m in Sources */,
+				4E54672D1A9F981100A03287 /* GHSReactiveGetUserPullRequest.m in Sources */,
+				4E54671F1A9F981100A03287 /* GHSAuthenticationEntity.m in Sources */,
+				4E54672F1A9F981100A03287 /* GHSRepoDetailViewController.m in Sources */,
+				A5BA2EAE1A9E5DA80029DE57 /* main.m in Sources */,
+				4E5467371A9F981100A03287 /* GHSUserRepositoriesStorage+Reactive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2EBD1A9E5DA80029DE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7F92911A9FDB1E0077638F /* GHSWatchKitExtensionServiceModuleStub.m in Sources */,
+				4E7F928D1A9FDB1E0077638F /* GHSWatchKitExtensionServiceTest.m in Sources */,
+				4E7F928E1A9FDB1E0077638F /* GHSAuthenticationEntityStub.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2ED11A9E5F580029DE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5467BC1A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.m in Sources */,
+				4E5467BF1A9F9F5F00A03287 /* GHSFetchPullRequestList.m in Sources */,
+				4E5467BB1A9F9F5F00A03287 /* GHSGlanceController.m in Sources */,
+				4E5467B51A9F9F5F00A03287 /* GHSWatchStoryboardConstants.m in Sources */,
+				4E5467C81A9FA05D00A03287 /* GHSWatchKitExtensionHandOffKeys.m in Sources */,
+				4E5467B91A9F9F5F00A03287 /* GHSListItemRowController.m in Sources */,
+				4E5467B81A9F9F5F00A03287 /* GHSWathRepositoryDetailsInterfaceController.m in Sources */,
+				4E5467BD1A9F9F5F00A03287 /* GHSPullRequestNotificationController.m in Sources */,
+				4E5467C01A9F9F5F00A03287 /* GHSLoadPullRequestList.m in Sources */,
+				4E5467BE1A9F9F5F00A03287 /* GHSNotificationMainController.m in Sources */,
+				4E5467BA1A9F9F5F00A03287 /* GHSRepositoryRowController.m in Sources */,
+				4E5467B71A9F9F5F00A03287 /* GHSWatchMainInterfaceController.m in Sources */,
+				4E5467B61A9F9F5F00A03287 /* GHSWatchPullRequestDetailsInterfazController.m in Sources */,
+				4E5467C11A9F9F5F00A03287 /* GHSWatchKitNotificationsCollaborators.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2EFD1A9E60580029DE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E54676F1A9F9A5700A03287 /* GHSSerializableModel.m in Sources */,
+				4E5467851A9F9A5700A03287 /* GHSUserRepositoriesStorage.m in Sources */,
+				4E5467831A9F9A5700A03287 /* GHSUserRepositories.m in Sources */,
+				4E5467721A9F9A5700A03287 /* GHSPullRequest.m in Sources */,
+				4E54677F1A9F9A5700A03287 /* GHSUserDefaultStorageCordinator.m in Sources */,
+				4E5467761A9F9A5700A03287 /* GHSUserPullRequestDefaultStorage.m in Sources */,
+				4E5467811A9F9A5700A03287 /* GHSRepository.m in Sources */,
+				4E54677C1A9F9A5700A03287 /* GHSFileStorageCordinator.m in Sources */,
+				A545AA131AA0CFD500A6E8EC /* GitHubStarsCoreKitConfiguration.m in Sources */,
+				4E5467741A9F9A5700A03287 /* GHSUserPullRequest.m in Sources */,
+				4E5467781A9F9A5700A03287 /* GHSUserPullRequestFileStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2F081A9E60580029DE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7F92621A9FCF8E0077638F /* GHSUserRepositoriesTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA2F221A9E60900029DE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5467C51A9F9FDC00A03287 /* GHSSharedKeys.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5BA2EC31A9E5DA80029DE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5BA2EA71A9E5DA80029DE57 /* GitHubStars */;
+			targetProxy = A5BA2EC21A9E5DA80029DE57 /* PBXContainerItemProxy */;
+		};
+		A5BA2EEA1A9E5F590029DE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5BA2EE61A9E5F590029DE57 /* GitHubStars WatchKit App */;
+			targetProxy = A5BA2EE91A9E5F590029DE57 /* PBXContainerItemProxy */;
+		};
+		A5BA2EF41A9E5F590029DE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5BA2ED41A9E5F580029DE57 /* GitHubStars WatchKit Extension */;
+			targetProxy = A5BA2EF31A9E5F590029DE57 /* PBXContainerItemProxy */;
+		};
+		A5BA2F0F1A9E60580029DE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5BA2F011A9E60580029DE57 /* GitHubStarsCoreKit */;
+			targetProxy = A5BA2F0E1A9E60580029DE57 /* PBXContainerItemProxy */;
+		};
+		A5BA2F111A9E60580029DE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5BA2EA71A9E5DA80029DE57 /* GitHubStars */;
+			targetProxy = A5BA2F101A9E60580029DE57 /* PBXContainerItemProxy */;
+		};
+		A5BA2F181A9E60580029DE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5BA2F011A9E60580029DE57 /* GitHubStarsCoreKit */;
+			targetProxy = A5BA2F171A9E60580029DE57 /* PBXContainerItemProxy */;
+		};
+		A5BA2F3D1A9E60900029DE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5BA2F261A9E60900029DE57 /* GitHubStarsCommonsKit */;
+			targetProxy = A5BA2F3C1A9E60900029DE57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E5466E11A9F981100A03287 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E5466E21A9F981100A03287 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		4E5466E31A9F981100A03287 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E5466E41A9F981100A03287 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5BA2EC91A9E5DA80029DE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A5BA2ECA1A9E5DA80029DE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5BA2ECC1A9E5DA80029DE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42739257D7FDFF4834ED8571 /* Pods-GitHubStars.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GitHubStars iOS /GitHubStars.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "GitHubStars iOS /Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A5BA2ECD1A9E5DA80029DE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4485A38D017BBFF04383DFCF /* Pods-GitHubStars.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GitHubStars iOS /GitHubStars.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "GitHubStars iOS /Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		A5BA2ECF1A9E5DA80029DE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91213CCBC875A1AB372E0F29 /* Pods-GitHubStarsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GitHubStars iOS Tests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubStars.app/GitHubStars";
+			};
+			name = Debug;
+		};
+		A5BA2ED01A9E5DA80029DE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9121C4BD85AE80351B988F2 /* Pods-GitHubStarsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GitHubStars iOS Tests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubStars.app/GitHubStars";
+			};
+			name = Release;
+		};
+		A5BA2EF61A9E5F590029DE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GitHubStars WatchKit Extension/GitHubStars WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GitHubStars WatchKit Extension/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A5BA2EF71A9E5F590029DE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GitHubStars WatchKit Extension/GitHubStars WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "GitHubStars WatchKit Extension/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A5BA2EF81A9E5F590029DE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = GitHubStars_WatchKit_Extension;
+				INFOPLIST_FILE = "GitHubStars WatchKit App/Supporting Files/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A5BA2EF91A9E5F590029DE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = GitHubStars_WatchKit_Extension;
+				INFOPLIST_FILE = "GitHubStars WatchKit App/Supporting Files/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A5BA2F1C1A9E60590029DE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GitHubStarsCoreKit/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5BA2F1D1A9E60590029DE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "GitHubStarsCoreKit/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5BA2F201A9E60590029DE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GitHubStarsCoreKitTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubStars.app/GitHubStars";
+			};
+			name = Debug;
+		};
+		A5BA2F211A9E60590029DE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GitHubStarsCoreKitTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubStars.app/GitHubStars";
+			};
+			name = Release;
+		};
+		A5BA2F411A9E60900029DE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GitHubStarsCommonsKit/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5BA2F421A9E60900029DE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "GitHubStarsCommonsKit/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5BA2EA31A9E5DA80029DE57 /* Build configuration list for PBXProject "GitHubStars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BA2EC91A9E5DA80029DE57 /* Debug */,
+				A5BA2ECA1A9E5DA80029DE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BA2ECB1A9E5DA80029DE57 /* Build configuration list for PBXNativeTarget "GitHubStars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BA2ECC1A9E5DA80029DE57 /* Debug */,
+				A5BA2ECD1A9E5DA80029DE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BA2ECE1A9E5DA80029DE57 /* Build configuration list for PBXNativeTarget "GitHubStarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BA2ECF1A9E5DA80029DE57 /* Debug */,
+				A5BA2ED01A9E5DA80029DE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BA2EFA1A9E5F590029DE57 /* Build configuration list for PBXNativeTarget "GitHubStars WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BA2EF81A9E5F590029DE57 /* Debug */,
+				A5BA2EF91A9E5F590029DE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BA2EFB1A9E5F590029DE57 /* Build configuration list for PBXNativeTarget "GitHubStars WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BA2EF61A9E5F590029DE57 /* Debug */,
+				A5BA2EF71A9E5F590029DE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BA2F1B1A9E60590029DE57 /* Build configuration list for PBXNativeTarget "GitHubStarsCoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BA2F1C1A9E60590029DE57 /* Debug */,
+				A5BA2F1D1A9E60590029DE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BA2F1F1A9E60590029DE57 /* Build configuration list for PBXNativeTarget "GitHubStarsCoreKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BA2F201A9E60590029DE57 /* Debug */,
+				A5BA2F211A9E60590029DE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BA2F401A9E60900029DE57 /* Build configuration list for PBXNativeTarget "GitHubStarsCommonsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BA2F411A9E60900029DE57 /* Debug */,
+				A5BA2F421A9E60900029DE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5BA2EA01A9E5DA80029DE57 /* Project object */;
+}

@@ -1,0 +1,43 @@
+PODS:
+  - AFNetworking (1.3.4)
+  - GHMarkdownParser (0.1.2)
+  - ISO8601DateFormatter (0.7.1)
+  - Mantle (1.5.4):
+    - Mantle/extobjc (= 1.5.4)
+  - Mantle/extobjc (1.5.4)
+  - OctoKit (0.7.3):
+    - AFNetworking (~> 1.3.3)
+    - Mantle (~> 1.5.3)
+    - ReactiveCocoa (~> 2.2.2)
+  - ReactiveCocoa (2.2.4):
+    - ReactiveCocoa/Core (= 2.2.4)
+    - ReactiveCocoa/no-arc (= 2.2.4)
+  - ReactiveCocoa/Core (2.2.4):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.2.4)
+
+DEPENDENCIES:
+  - GHMarkdownParser
+  - ISO8601DateFormatter (from `https://github.com/ieduardogf/iso-8601-date-formatter.git`)
+  - OctoKit (from `OctoKit.podspec.json`)
+
+EXTERNAL SOURCES:
+  ISO8601DateFormatter:
+    :git: https://github.com/ieduardogf/iso-8601-date-formatter.git
+  OctoKit:
+    :podspec: OctoKit.podspec.json
+
+CHECKOUT OPTIONS:
+  ISO8601DateFormatter:
+    :commit: d32d716a5b1dddbbded1c713e8d92070ba2f5b70
+    :git: https://github.com/ieduardogf/iso-8601-date-formatter.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 80c4e0652b08eb34e25b9c0ff3c82556fe5967b4
+  GHMarkdownParser: 4d51786390a786f8af4d556585f9b6ebd437e428
+  ISO8601DateFormatter: d0653e4234941f45ce7bcddb7eb23fab850a8830
+  Mantle: d5fbaf30fbc58031223af13812c060e15934a1fe
+  OctoKit: 82d86e9a24ded0b10ae6b6e42780c1d1141b3ec7
+  ReactiveCocoa: 2af0e10b1cb17a060898992474eaf51d12f34ae9
+
+COCOAPODS: 0.35.0

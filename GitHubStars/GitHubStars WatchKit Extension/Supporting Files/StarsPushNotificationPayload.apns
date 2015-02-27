@@ -1,0 +1,18 @@
+{
+    "aps": {
+        "alert": {
+            "body": "You have a new start on Amazing repo",
+            "title": "New Start"
+        },
+        "category": "NewStarCategory"
+    },
+    
+    "WatchKit Simulator Actions": [
+        {
+            "title": "See Details",
+            "identifier": "moreDetailsButtonAction"
+        }
+    ],
+    
+    "repositoryName": "iso-8601-date-formatter"
+}

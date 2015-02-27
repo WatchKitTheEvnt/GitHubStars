@@ -1,0 +1,25 @@
+{
+  "name": "ISO8601DateFormatter",
+  "version": "0.7.1",
+  "summary": "A Cocoa NSFormatter subclass to convert dates to and from ISO-8601-formatted strings. Supports calendar, week, and ordinal formats.",
+  "homepage": "http://boredzo.org/iso8601dateformatter/",
+  "license": "BSD",
+  "authors": "Peter Hosey",
+  "source": {
+    "git": "https://github.com/boredzo/iso-8601-date-formatter.git",
+    "tag": "0.7.1"
+  },
+  "source_files": "*.{m,h}",
+  "requires_arc": false,
+  "platforms": {
+    "ios": "5.1",
+    "osx": "10.7"
+  },
+  "exclude_files": [
+    "test*.m",
+    "timetrial.m",
+    "unparse*.m",
+    "ISO8601ForCocoa/ISO8601ForCocoa{,Touch}Tests/**/*.m"
+    ]
+}
+

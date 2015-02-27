@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--PullRequest Deatil-->
+        <scene sceneID="6IJ-OZ-BHq">
+            <objects>
+                <controller identifier="GHSWathPullRequestDetailsInterfaceController" id="jhq-Wd-zla" userLabel="PullRequest Deatil" customClass="GHSWatchPullRequestDetailsInterfazController">
+                    <items>
+                        <group width="1" height="219.5" alignment="left" layout="vertical" id="FIB-86-Hat">
+                            <items>
+                                <label width="134.5" height="51.5" alignment="left" text="Label" numberOfLines="0" id="2M3-Wx-B2T" userLabel="title"/>
+                                <label width="134.5" height="46.5" alignment="left" text="Label" numberOfLines="0" id="eWZ-aW-zJD" userLabel="body"/>
+                                <label width="134.5" height="45.5" alignment="left" text="Today" textAlignment="center" numberOfLines="0" id="EsG-dQ-apF" userLabel="updateDate"/>
+                                <separator alignment="left" id="rZU-1L-Gkq">
+                                    <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <label width="133.5" height="56.5" alignment="left" text="Me" textAlignment="center" numberOfLines="0" id="RgC-d6-rNk" userLabel="user"/>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bodyLabel" destination="eWZ-aW-zJD" id="U3p-Xp-bg3"/>
+                        <outlet property="titleLabel" destination="2M3-Wx-B2T" id="Y73-5r-9Tx"/>
+                        <outlet property="updateDateLabel" destination="EsG-dQ-apF" id="39Z-IG-rMT"/>
+                        <outlet property="userNameLabel" destination="RgC-d6-rNk" id="9Ng-du-1hS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="573" y="418.25"/>
+        </scene>
+        <!--Watch Main Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="GHSWatchMainInterfaceController">
+                    <items>
+                        <table alignment="left" id="3th-0H-GUt">
+                            <items>
+                                <tableRow identifier="RepositoryRowController" id="Zap-Wb-1aC" customClass="GHSRepositoryRowController">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="nK3-wS-948">
+                                        <items>
+                                            <group alignment="left" verticalAlignment="bottom" id="6Et-EZ-aw2">
+                                                <items>
+                                                    <imageView alignment="left" id="dYz-6V-NVi"/>
+                                                    <label alignment="left" text="Label" id="W7Q-M9-G2J"/>
+                                                    <imageView alignment="left" id="Hwp-1B-Sch"/>
+                                                    <label alignment="left" text="Label" id="ZOx-Bk-oXH"/>
+                                                    <imageView alignment="left" id="fbD-cw-pZi"/>
+                                                    <label alignment="left" text="Label" id="2eb-pa-yx2"/>
+                                                </items>
+                                            </group>
+                                            <label alignment="left" text="Label" id="bJs-Ig-NRm">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.25490196078431371" green="0.51372549019607838" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="TEN-Y3-Z20" kind="push" identifier="GHSWatchMainInterfaceControllerListSelectionSegue" id="jJA-BW-rBX"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="forksLabel" destination="ZOx-Bk-oXH" id="LFB-BJ-FZf"/>
+                                        <outlet property="openIssuesLabel" destination="2eb-pa-yx2" id="LXq-7G-ixS"/>
+                                        <outlet property="respositoryLabel" destination="bJs-Ig-NRm" id="vJ1-RZ-TbP"/>
+                                        <outlet property="stargazersLabel" destination="W7Q-M9-G2J" id="c8n-iN-U6A"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="EmptyListRowController" selectable="NO" id="3zO-T4-q2q" customClass="GHSListItemRowController">
+                                    <group key="rootItem" width="1" alignment="left" id="dk4-ng-lhd">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="No Repositories" id="0LZ-Ph-RKn"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.25490196079999999" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="NoAuthenticationRowController" id="qKQ-NS-uXA" customClass="GHSListItemRowController">
+                                    <group key="rootItem" width="1" alignment="left" id="e2X-Mc-TeG">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Log in" id="A4C-On-dey"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.25490196079999999" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="interfaceTable" destination="3th-0H-GUt" id="M42-rm-3PQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="128" y="419"/>
+        </scene>
+        <!--GHSWathRepositoryDetailsInterfaceController-->
+        <scene sceneID="c2d-uP-QCJ">
+            <objects>
+                <controller identifier="GHSWathRepositoryDetailsInterfaceController" id="TEN-Y3-Z20" customClass="GHSWathRepositoryDetailsInterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="NLX-RV-8TC">
+                            <items>
+                                <imageView alignment="left" id="D9F-Ve-X9u"/>
+                                <label alignment="left" text="Label" id="6Ro-Tk-P0n"/>
+                                <imageView alignment="left" id="96D-zR-luw"/>
+                                <label alignment="left" text="Label" id="aTo-AL-8Vd"/>
+                                <imageView alignment="left" id="lUJ-M1-V30"/>
+                                <label alignment="left" text="Label" id="AFR-02-xDe"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Description" numberOfLines="0" id="T5x-kL-p0B"/>
+                        <separator alignment="left" alpha="0.29999999999999999" id="VJj-kf-MF8"/>
+                        <group width="1" alignment="left" layout="vertical" id="Hgc-i0-7hK">
+                            <items>
+                                <label alignment="left" alpha="0.5" text="Language" id="cbK-LA-uvw">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="Objective-c" minimumScaleFactor="0.80000000000000004" id="xrW-mw-K6P"/>
+                                <separator alignment="left" alpha="0.29999999999999999" id="q83-mj-mbf"/>
+                                <label alignment="left" alpha="0.5" text="Last update" id="X03-GC-1K6">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="Yesterday" minimumScaleFactor="0.80000000000000004" id="4E3-Ne-AC7"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="GIW-jk-P8X"/>
+                    </items>
+                    <menu key="menu" id="LhZ-yk-QgZ">
+                        <items>
+                            <menuItem title="Open" icon="info" id="Y0l-Fo-3gb"/>
+                            <menuItem title="Star" id="h9i-w1-APi"/>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="forksLabel" destination="aTo-AL-8Vd" id="Ll9-R2-TAh"/>
+                        <outlet property="languageLabel" destination="xrW-mw-K6P" id="rX1-oW-i8Y"/>
+                        <outlet property="lastUpdateLabel" destination="4E3-Ne-AC7" id="27s-K6-bo3"/>
+                        <outlet property="openIssuesLabel" destination="AFR-02-xDe" id="10M-wi-lDA"/>
+                        <outlet property="shortDescriptionLabel" destination="T5x-kL-p0B" id="5Sq-qL-DS0"/>
+                        <outlet property="starGazesLabel" destination="6Ro-Tk-P0n" id="qcX-Ss-HKk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="347" y="416.25"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GHSGlanceController">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="octocat_silhouette" id="5OM-CC-F4Y"/>
+                                <label alignment="left" verticalAlignment="center" text="GitHubSearch" minimumScaleFactor="0.50000000000000011" id="VKo-Hs-B9r"/>
+                            </items>
+                        </group>
+                        <group alignment="left" contentMode="scaleAspectFit" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Popular Now" id="IQi-Ck-c1B">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="center" text="Repo Name" id="S7L-QD-kzg">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <group width="1" alignment="center" verticalAlignment="center" spacing="5" id="GaC-iN-ZtJ">
+                                    <items>
+                                        <imageView width="25" height="25" alignment="center" verticalAlignment="center" image="star_watch_1" contentMode="scaleAspectFill" id="tJe-9l-WXX"/>
+                                        <label alignment="center" verticalAlignment="center" text="0" id="sgY-4z-qoL">
+                                            <fontDescription key="font" type="system" pointSize="31"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <label alignment="center" verticalAlignment="center" text="First you must sign in with iOS App" textAlignment="center" numberOfLines="2" id="zrb-2n-eRx">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="zrb-2n-eRx" id="UCE-ms-rjz"/>
+                        <outlet property="repoNameLabel" destination="S7L-QD-kzg" id="Zgh-l4-RJS"/>
+                        <outlet property="starImage" destination="tJe-9l-WXX" id="rRm-Kw-pKJ"/>
+                        <outlet property="stargazersCountLabel" destination="sgY-4z-qoL" id="HdX-nW-i4X"/>
+                        <outlet property="titleLabel" destination="IQi-Ck-c1B" id="7qh-z7-9IS"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="128" y="784"/>
+        </scene>
+        <!--Stars Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController backgroundImage="Octocat.png" contentMode="scaleAspectFill" animationDuration="2" id="YCC-NB-fut" userLabel="Stars Static Notification Interface Controller">
+                    <items>
+                        <label width="131" height="92.5" alignment="left" alpha="0.84999999999999987" text="New Star" numberOfLines="0" id="XkS-y5-khE">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="NewStarCategory" id="JfB-70-Muf">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sashColor" red="1" green="0.52826989970000005" blue="0.33912538679999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="128" y="1107.5"/>
+        </scene>
+        <!--Pull Request Static Notification Interface Controller-->
+        <scene sceneID="zsf-Yh-hzy">
+            <objects>
+                <notificationController id="J4l-PZ-xjC" userLabel="Pull Request Static Notification Interface Controller">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="gvb-xu-i7y"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="PullRequestCategory" id="6Yw-gA-thq">
+                        <color key="sashColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="gvb-xu-i7y" id="xFW-hZ-EaR"/>
+                        <segue destination="D8O-tg-uWU" kind="relationship" relationship="dynamicNotificationInterface" id="0IS-GJ-b7E"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="128" y="1456"/>
+        </scene>
+        <!--Pull Request Notification Controller-->
+        <scene sceneID="bm4-b3-vaH">
+            <objects>
+                <controller id="D8O-tg-uWU" customClass="GHSPullRequestNotificationController">
+                    <items>
+                        <group width="1" height="138" alignment="left" layout="vertical" id="h4D-BS-YQC">
+                            <items>
+                                <label width="136" height="49.5" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="2o7-xE-H7A" userLabel="title"/>
+                                <label alignment="left" text="Repository" textAlignment="center" id="8uy-LR-ZcP">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </label>
+                                <label width="136" height="52.5" alignment="left" text="Label" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.90000000000000002" id="aqi-qv-Nvz" userLabel="repository"/>
+                            </items>
+                        </group>
+                        <group width="1" height="25.5" alignment="left" id="8CQ-AN-sdb">
+                            <items>
+                                <label width="49.5" alignment="left" text="State:" id="68K-Ty-MNZ">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </label>
+                                <label width="62.5" alignment="left" text="Label" numberOfLines="0" id="UbD-Z9-kPd" userLabel="state"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="repositoryNameLabel" destination="aqi-qv-Nvz" id="7lV-YT-zuv"/>
+                        <outlet property="stateLabel" destination="UbD-Z9-kPd" id="ECQ-Mw-fXy"/>
+                        <outlet property="titleLabel" destination="2o7-xE-H7A" id="fIb-Zx-ZYD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="363" y="1459"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+</document>
