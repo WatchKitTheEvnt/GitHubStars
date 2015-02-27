@@ -18,6 +18,7 @@ profile
 *.xcuserdatad
 *.xccheckout
 *.orig
+*.entitlements
 .DS_Store
 
 logs/
