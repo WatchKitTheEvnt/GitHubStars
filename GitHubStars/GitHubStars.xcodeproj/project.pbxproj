@@ -86,7 +86,6 @@
 		4E5467B81A9F9F5F00A03287 /* GHSWathRepositoryDetailsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467991A9F9F5F00A03287 /* GHSWathRepositoryDetailsInterfaceController.m */; };
 		4E5467B91A9F9F5F00A03287 /* GHSListItemRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54679C1A9F9F5F00A03287 /* GHSListItemRowController.m */; };
 		4E5467BA1A9F9F5F00A03287 /* GHSRepositoryRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E54679E1A9F9F5F00A03287 /* GHSRepositoryRowController.m */; };
-		4E5467BB1A9F9F5F00A03287 /* GHSGlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467A11A9F9F5F00A03287 /* GHSGlanceController.m */; };
 		4E5467BC1A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467A41A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.m */; };
 		4E5467BD1A9F9F5F00A03287 /* GHSPullRequestNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467A81A9F9F5F00A03287 /* GHSPullRequestNotificationController.m */; };
 		4E5467BE1A9F9F5F00A03287 /* GHSNotificationMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5467AA1A9F9F5F00A03287 /* GHSNotificationMainController.m */; };
@@ -336,8 +335,6 @@
 		4E54679C1A9F9F5F00A03287 /* GHSListItemRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSListItemRowController.m; sourceTree = "<group>"; };
 		4E54679D1A9F9F5F00A03287 /* GHSRepositoryRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSRepositoryRowController.h; sourceTree = "<group>"; };
 		4E54679E1A9F9F5F00A03287 /* GHSRepositoryRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSRepositoryRowController.m; sourceTree = "<group>"; };
-		4E5467A01A9F9F5F00A03287 /* GHSGlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSGlanceController.h; sourceTree = "<group>"; };
-		4E5467A11A9F9F5F00A03287 /* GHSGlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSGlanceController.m; sourceTree = "<group>"; };
 		4E5467A31A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSStatefulGetUserRepositories.h; sourceTree = "<group>"; };
 		4E5467A41A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSStatefulGetUserRepositories.m; sourceTree = "<group>"; };
 		4E5467A71A9F9F5F00A03287 /* GHSPullRequestNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSPullRequestNotificationController.h; sourceTree = "<group>"; };
@@ -988,8 +985,6 @@
 		4E54679F1A9F9F5F00A03287 /* Glance */ = {
 			isa = PBXGroup;
 			children = (
-				4E5467A01A9F9F5F00A03287 /* GHSGlanceController.h */,
-				4E5467A11A9F9F5F00A03287 /* GHSGlanceController.m */,
 				4E5467A21A9F9F5F00A03287 /* Interactors */,
 			);
 			path = Glance;
@@ -1745,7 +1740,6 @@
 			files = (
 				4E5467BC1A9F9F5F00A03287 /* GHSStatefulGetUserRepositories.m in Sources */,
 				4E5467BF1A9F9F5F00A03287 /* GHSFetchPullRequestList.m in Sources */,
-				4E5467BB1A9F9F5F00A03287 /* GHSGlanceController.m in Sources */,
 				4E5467B51A9F9F5F00A03287 /* GHSWatchStoryboardConstants.m in Sources */,
 				4E5467C81A9FA05D00A03287 /* GHSWatchKitExtensionHandOffKeys.m in Sources */,
 				4E5467B91A9F9F5F00A03287 /* GHSListItemRowController.m in Sources */,

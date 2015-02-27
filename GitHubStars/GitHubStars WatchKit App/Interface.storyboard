@@ -145,51 +145,6 @@
             </objects>
             <point key="canvasLocation" x="347" y="416.25"/>
         </scene>
-        <!--Glance Interface Controller-->
-        <scene sceneID="BOz-TT-tkC">
-            <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GHSGlanceController">
-                    <items>
-                        <group alignment="left" id="t8f-Gd-c4y">
-                            <items>
-                                <imageView width="40" height="40" alignment="left" image="octocat_silhouette" id="5OM-CC-F4Y"/>
-                                <label alignment="left" verticalAlignment="center" text="GitHubSearch" minimumScaleFactor="0.50000000000000011" id="VKo-Hs-B9r"/>
-                            </items>
-                        </group>
-                        <group alignment="left" contentMode="scaleAspectFit" layout="vertical" id="uCw-4Q-Ouw">
-                            <items>
-                                <label alignment="center" verticalAlignment="center" text="Popular Now" id="IQi-Ck-c1B">
-                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                                </label>
-                                <label alignment="center" verticalAlignment="center" text="Repo Name" id="S7L-QD-kzg">
-                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
-                                </label>
-                                <group width="1" alignment="center" verticalAlignment="center" spacing="5" id="GaC-iN-ZtJ">
-                                    <items>
-                                        <imageView width="25" height="25" alignment="center" verticalAlignment="center" image="star_watch_1" contentMode="scaleAspectFill" id="tJe-9l-WXX"/>
-                                        <label alignment="center" verticalAlignment="center" text="0" id="sgY-4z-qoL">
-                                            <fontDescription key="font" type="system" pointSize="31"/>
-                                        </label>
-                                    </items>
-                                </group>
-                                <label alignment="center" verticalAlignment="center" text="First you must sign in with iOS App" textAlignment="center" numberOfLines="2" id="zrb-2n-eRx">
-                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                                </label>
-                            </items>
-                        </group>
-                    </items>
-                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
-                    <connections>
-                        <outlet property="errorLabel" destination="zrb-2n-eRx" id="UCE-ms-rjz"/>
-                        <outlet property="repoNameLabel" destination="S7L-QD-kzg" id="Zgh-l4-RJS"/>
-                        <outlet property="starImage" destination="tJe-9l-WXX" id="rRm-Kw-pKJ"/>
-                        <outlet property="stargazersCountLabel" destination="sgY-4z-qoL" id="HdX-nW-i4X"/>
-                        <outlet property="titleLabel" destination="IQi-Ck-c1B" id="7qh-z7-9IS"/>
-                    </connections>
-                </glanceController>
-            </objects>
-            <point key="canvasLocation" x="128" y="784"/>
-        </scene>
         <!--Stars Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
