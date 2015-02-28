@@ -10,8 +10,9 @@
 
 #pragma mark - GHSWatchMainInterfaceController
 
-NSString *const GHSWatchMainInterfaceControllerListRowType = @"";
-NSString *const GHSWatchMainInterfaceControllerNoRowType = @"";
+NSString *const GHSWatchMainInterfaceControllerListRowType = @"RepositoryRowController";
+NSString *const GHSWatchMainInterfaceControllerEmptyListRowType = @"EmptyListRowController";
+NSString *const GHSWatchMainInterfaceControllerNotAuthenticatedRowType = @"NoAuthenticationRowController";
 
 NSString *const GHSWatchMainInterfaceControllerListSelectionSegue = @"GHSWatchMainInterfaceControllerListSelectionSegue";
 
