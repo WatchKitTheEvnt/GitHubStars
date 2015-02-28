@@ -36,140 +36,14 @@
         <!--Watch Main Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="GHSWatchMainInterfaceController">
-                    <items>
-                        <table alignment="left" id="3th-0H-GUt">
-                            <items>
-                                <tableRow identifier="RepositoryRowController" id="Zap-Wb-1aC" customClass="GHSRepositoryRowController">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="nK3-wS-948">
-                                        <items>
-                                            <group width="1" alignment="left" verticalAlignment="bottom" id="6Et-EZ-aw2">
-                                                <items>
-                                                    <imageView alignment="left" verticalAlignment="center" image="icon_star_small" id="dYz-6V-NVi">
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </imageView>
-                                                    <label alignment="left" verticalAlignment="center" text="0" id="W7Q-M9-G2J"/>
-                                                    <group width="4" height="1" alignment="left" id="ZZJ-2C-kpX"/>
-                                                    <imageView alignment="left" verticalAlignment="center" image="icon_fork_small" id="Hwp-1B-Sch">
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </imageView>
-                                                    <label alignment="left" verticalAlignment="center" text="0" id="ZOx-Bk-oXH"/>
-                                                    <group width="4" height="1" alignment="left" id="LDt-5P-BuC"/>
-                                                    <imageView alignment="left" verticalAlignment="center" image="icon_issue_small" id="fbD-cw-pZi">
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </imageView>
-                                                    <label alignment="left" verticalAlignment="center" text="0" id="2eb-pa-yx2"/>
-                                                </items>
-                                            </group>
-                                            <label alignment="left" text="Label" id="bJs-Ig-NRm">
-                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                                            </label>
-                                        </items>
-                                        <color key="backgroundColor" red="0.25490196078431371" green="0.51372549019607838" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <segue destination="TEN-Y3-Z20" kind="push" identifier="GHSWatchMainInterfaceControllerListSelectionSegue" id="jJA-BW-rBX"/>
-                                        </connections>
-                                    </group>
-                                    <connections>
-                                        <outlet property="forksLabel" destination="ZOx-Bk-oXH" id="LFB-BJ-FZf"/>
-                                        <outlet property="openIssuesLabel" destination="2eb-pa-yx2" id="LXq-7G-ixS"/>
-                                        <outlet property="respositoryLabel" destination="bJs-Ig-NRm" id="vJ1-RZ-TbP"/>
-                                        <outlet property="stargazersLabel" destination="W7Q-M9-G2J" id="c8n-iN-U6A"/>
-                                    </connections>
-                                </tableRow>
-                                <tableRow identifier="EmptyListRowController" selectable="NO" id="3zO-T4-q2q" customClass="GHSListItemRowController">
-                                    <group key="rootItem" width="1" alignment="left" id="dk4-ng-lhd">
-                                        <items>
-                                            <label alignment="left" verticalAlignment="center" text="No Repositories" id="0LZ-Ph-RKn"/>
-                                        </items>
-                                        <color key="backgroundColor" red="0.25490196079999999" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    </group>
-                                </tableRow>
-                                <tableRow identifier="NoAuthenticationRowController" selectable="NO" id="qKQ-NS-uXA" customClass="GHSListItemRowController">
-                                    <group key="rootItem" width="1" alignment="left" id="e2X-Mc-TeG">
-                                        <items>
-                                            <label alignment="left" verticalAlignment="center" text="Log in" id="A4C-On-dey"/>
-                                        </items>
-                                        <color key="backgroundColor" red="0.25490196079999999" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    </group>
-                                </tableRow>
-                            </items>
-                        </table>
-                    </items>
-                    <menu key="menu" id="P94-Dz-cDW">
-                        <items>
-                            <menuItem title="Sort By Stars" image="menu_icon_star" id="vtQ-aG-AEs">
-                                <connections>
-                                    <action selector="sortByStarGazersAction" destination="AgC-eL-Hgc" id="NwQ-h0-eOx"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Sort By Update" image="menu_icon_calendar" id="W5u-uv-6Dj">
-                                <connections>
-                                    <action selector="sortByLastUpdateAction" destination="AgC-eL-Hgc" id="eTk-zZ-tno"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Refresh" image="menu_icon_refresh" id="JaJ-fT-Glb">
-                                <connections>
-                                    <action selector="refreshDataAction" destination="AgC-eL-Hgc" id="EaR-Db-byc"/>
-                                </connections>
-                            </menuItem>
-                        </items>
-                    </menu>
-                    <connections>
-                        <outlet property="interfaceTable" destination="3th-0H-GUt" id="M42-rm-3PQ"/>
-                    </connections>
-                </controller>
+                <controller id="AgC-eL-Hgc" customClass="GHSWatchMainInterfaceController"/>
             </objects>
             <point key="canvasLocation" x="128" y="419"/>
         </scene>
         <!--GHSWathRepositoryDetailsInterfaceController-->
         <scene sceneID="c2d-uP-QCJ">
             <objects>
-                <controller identifier="GHSWathRepositoryDetailsInterfaceController" id="TEN-Y3-Z20" customClass="GHSWathRepositoryDetailsInterfaceController">
-                    <items>
-                        <group width="1" alignment="left" id="NLX-RV-8TC">
-                            <items>
-                                <imageView alignment="left" verticalAlignment="center" image="icon_star_small" id="D9F-Ve-X9u">
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </imageView>
-                                <label alignment="left" verticalAlignment="center" text="0" id="6Ro-Tk-P0n"/>
-                                <group width="4" height="1" alignment="left" id="Snb-2D-CbP"/>
-                                <imageView alignment="left" verticalAlignment="center" image="icon_fork_small" id="96D-zR-luw">
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </imageView>
-                                <label alignment="left" verticalAlignment="center" text="0" id="aTo-AL-8Vd"/>
-                                <group width="4" height="1" alignment="left" id="rsc-cK-1yz"/>
-                                <imageView alignment="left" verticalAlignment="center" image="icon_issue_small" id="lUJ-M1-V30">
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </imageView>
-                                <label alignment="left" verticalAlignment="center" text="0" id="AFR-02-xDe"/>
-                            </items>
-                        </group>
-                        <label alignment="left" text="Description" numberOfLines="0" id="T5x-kL-p0B"/>
-                        <separator alignment="left" id="VJj-kf-MF8">
-                            <color key="color" red="0.25490196079999999" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
-                        </separator>
-                        <label alignment="left" alpha="0.70000000000000018" text="Language" id="cbK-LA-uvw">
-                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
-                        </label>
-                        <label alignment="left" text="Objective-c" minimumScaleFactor="0.80000000000000004" id="xrW-mw-K6P"/>
-                        <separator alignment="left" id="q83-mj-mbf">
-                            <color key="color" red="0.25490196079999999" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
-                        </separator>
-                        <label alignment="left" alpha="0.70000000000000018" text="Last update" id="X03-GC-1K6">
-                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
-                        </label>
-                        <label alignment="left" text="Yesterday" minimumScaleFactor="0.80000000000000004" id="4E3-Ne-AC7"/>
-                    </items>
-                    <connections>
-                        <outlet property="forksLabel" destination="aTo-AL-8Vd" id="Ll9-R2-TAh"/>
-                        <outlet property="languageLabel" destination="xrW-mw-K6P" id="rX1-oW-i8Y"/>
-                        <outlet property="lastUpdateLabel" destination="4E3-Ne-AC7" id="27s-K6-bo3"/>
-                        <outlet property="openIssuesLabel" destination="AFR-02-xDe" id="10M-wi-lDA"/>
-                        <outlet property="shortDescriptionLabel" destination="T5x-kL-p0B" id="5Sq-qL-DS0"/>
-                        <outlet property="starGazesLabel" destination="6Ro-Tk-P0n" id="qcX-Ss-HKk"/>
-                    </connections>
-                </controller>
+                <controller identifier="GHSWathRepositoryDetailsInterfaceController" id="TEN-Y3-Z20" customClass="GHSWathRepositoryDetailsInterfaceController"/>
             </objects>
             <point key="canvasLocation" x="347" y="416.25"/>
         </scene>

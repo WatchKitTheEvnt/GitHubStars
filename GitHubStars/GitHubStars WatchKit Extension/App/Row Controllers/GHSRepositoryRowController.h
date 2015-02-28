@@ -11,12 +11,4 @@
 
 @interface GHSRepositoryRowController : NSObject
 
-- (void)setRepositoryName:(NSString *)repositoryName;
-
-- (void)setStargazeCount:(NSUInteger)startgazeCount;
-
-- (void)setForksCount:(NSUInteger)forksCount;
-
-- (void)setOpenIssuesCount:(NSUInteger)openIssuesCount;
-
 @end
