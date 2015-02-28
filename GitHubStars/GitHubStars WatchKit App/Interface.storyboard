@@ -43,14 +43,22 @@
                                 <tableRow identifier="RepositoryRowController" id="Zap-Wb-1aC" customClass="GHSRepositoryRowController">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="nK3-wS-948">
                                         <items>
-                                            <group alignment="left" verticalAlignment="bottom" id="6Et-EZ-aw2">
+                                            <group width="1" alignment="left" verticalAlignment="bottom" id="6Et-EZ-aw2">
                                                 <items>
-                                                    <imageView alignment="left" id="dYz-6V-NVi"/>
-                                                    <label alignment="left" text="Label" id="W7Q-M9-G2J"/>
-                                                    <imageView alignment="left" id="Hwp-1B-Sch"/>
-                                                    <label alignment="left" text="Label" id="ZOx-Bk-oXH"/>
-                                                    <imageView alignment="left" id="fbD-cw-pZi"/>
-                                                    <label alignment="left" text="Label" id="2eb-pa-yx2"/>
+                                                    <imageView alignment="left" verticalAlignment="center" image="icon_star_small" id="dYz-6V-NVi">
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </imageView>
+                                                    <label alignment="left" verticalAlignment="center" text="0" id="W7Q-M9-G2J"/>
+                                                    <group width="4" height="1" alignment="left" id="ZZJ-2C-kpX"/>
+                                                    <imageView alignment="left" verticalAlignment="center" image="icon_fork_small" id="Hwp-1B-Sch">
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </imageView>
+                                                    <label alignment="left" verticalAlignment="center" text="0" id="ZOx-Bk-oXH"/>
+                                                    <group width="4" height="1" alignment="left" id="LDt-5P-BuC"/>
+                                                    <imageView alignment="left" verticalAlignment="center" image="icon_issue_small" id="fbD-cw-pZi">
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </imageView>
+                                                    <label alignment="left" verticalAlignment="center" text="0" id="2eb-pa-yx2"/>
                                                 </items>
                                             </group>
                                             <label alignment="left" text="Label" id="bJs-Ig-NRm">
@@ -90,7 +98,17 @@
                     </items>
                     <menu key="menu" id="P94-Dz-cDW">
                         <items>
-                            <menuItem title="Refresh" icon="shuffle" id="JaJ-fT-Glb">
+                            <menuItem title="Sort By Stars" image="menu_icon_star" id="vtQ-aG-AEs">
+                                <connections>
+                                    <action selector="sortByStarGazersAction" destination="AgC-eL-Hgc" id="NwQ-h0-eOx"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Sort By Update" image="menu_icon_calendar" id="W5u-uv-6Dj">
+                                <connections>
+                                    <action selector="sortByLastUpdateAction" destination="AgC-eL-Hgc" id="eTk-zZ-tno"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Refresh" image="menu_icon_refresh" id="JaJ-fT-Glb">
                                 <connections>
                                     <action selector="refreshDataAction" destination="AgC-eL-Hgc" id="EaR-Db-byc"/>
                                 </connections>
@@ -111,12 +129,20 @@
                     <items>
                         <group width="1" alignment="left" id="NLX-RV-8TC">
                             <items>
-                                <imageView alignment="left" id="D9F-Ve-X9u"/>
-                                <label alignment="left" text="Label" id="6Ro-Tk-P0n"/>
-                                <imageView alignment="left" id="96D-zR-luw"/>
-                                <label alignment="left" text="Label" id="aTo-AL-8Vd"/>
-                                <imageView alignment="left" id="lUJ-M1-V30"/>
-                                <label alignment="left" text="Label" id="AFR-02-xDe"/>
+                                <imageView alignment="left" verticalAlignment="center" image="icon_star_small" id="D9F-Ve-X9u">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="0" id="6Ro-Tk-P0n"/>
+                                <group width="4" height="1" alignment="left" id="Snb-2D-CbP"/>
+                                <imageView alignment="left" verticalAlignment="center" image="icon_fork_small" id="96D-zR-luw">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="0" id="aTo-AL-8Vd"/>
+                                <group width="4" height="1" alignment="left" id="rsc-cK-1yz"/>
+                                <imageView alignment="left" verticalAlignment="center" image="icon_issue_small" id="lUJ-M1-V30">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="0" id="AFR-02-xDe"/>
                             </items>
                         </group>
                         <label alignment="left" text="Description" numberOfLines="0" id="T5x-kL-p0B"/>
@@ -168,7 +194,9 @@
                                 </label>
                                 <group width="1" alignment="center" verticalAlignment="center" spacing="5" id="GaC-iN-ZtJ">
                                     <items>
-                                        <imageView width="25" height="25" alignment="center" verticalAlignment="center" image="star_watch_1" contentMode="scaleAspectFill" id="tJe-9l-WXX"/>
+                                        <imageView width="25" height="25" alignment="center" verticalAlignment="center" image="icon_star" contentMode="scaleAspectFill" id="tJe-9l-WXX">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </imageView>
                                         <label alignment="center" verticalAlignment="center" text="0" id="sgY-4z-qoL">
                                             <fontDescription key="font" type="system" pointSize="31"/>
                                         </label>

@@ -22,6 +22,12 @@
 #import "GHSNotificationMainController.h"
 #import "GHSUserPullRequest.h"
 
+typedef NS_ENUM(NSUInteger, GHSRepositorySortingOptions)
+{
+    GHSRepositorySortingByStarGazersCount,
+    GHSRepositorySortingByLastUpdate,
+};
+
 @interface GHSWatchMainInterfaceController() <GHSNotificationsMainControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *interfaceTable;
@@ -33,6 +39,8 @@
 @property (nonatomic) GHSNotificationMainController *mainNotificationsController;
 
 @property (nonatomic, assign, getter=isLoaded) BOOL loaded;
+
+@property (nonatomic, assign) GHSRepositorySortingOptions sortingOptions;
 
 @end
 
@@ -119,7 +127,7 @@
     NSInteger listItemCount = [repositories count];
     
     NSArray *previousRepositories = self.repositories;
-    self.repositories = repositories;
+    self.repositories = [self sortRepositories:repositories];
     if (listItemCount > 0)
     {
         if ([previousRepositories count] == 0)
@@ -173,6 +181,28 @@
     }
 }
 
+- (NSArray *)sortRepositories:(NSArray *)repositories
+{
+    NSArray *sortedRepos;
+    switch (self.sortingOptions) {
+        case GHSRepositorySortingByStarGazersCount:
+            sortedRepos = [repositories sortedArrayWithOptions:0U usingComparator:^NSComparisonResult(GHSRepository *repository1, GHSRepository *repository2) {
+                return (repository1.stargazersCount > repository2.stargazersCount ? NSOrderedAscending : NSOrderedDescending);
+            }];
+            break;
+        case GHSRepositorySortingByLastUpdate:
+            sortedRepos = [repositories sortedArrayWithOptions:0U usingComparator:^NSComparisonResult(GHSRepository *repository1, GHSRepository *repository2) {
+                return [repository2.lastUpdate compare:repository1.lastUpdate];
+            }];
+            break;
+        default:
+            sortedRepos = self.repositories;
+            break;
+    }
+    
+    return sortedRepos;
+}
+
 #pragma mark - Notifications Handling
 
 // when the app is launched from a notification. If launched from app icon in notification UI, identifier will be empty
@@ -202,6 +232,16 @@
     [self presentControllerWithName:GHSWathPullRequestDetailsInterfaceController context:pullRequest];
 }
 
+#pragma mark - Sorting
+
+- (void)setSortingOptions:(GHSRepositorySortingOptions)sortingOptions
+{
+    if (_sortingOptions == sortingOptions) return;
+    
+    _sortingOptions = sortingOptions;
+    [self refreshDataWithRepositories:_repositories];
+}
+
 #pragma mark - Menu actions
 
 - (IBAction)refreshDataAction
@@ -209,7 +249,15 @@
     [self fetchUserRepositories];
 }
 
+- (IBAction)sortByStarGazersAction
+{
+    self.sortingOptions = GHSRepositorySortingByStarGazersCount;
+}
+
+- (IBAction)sortByLastUpdateAction
+{
+    self.sortingOptions = GHSRepositorySortingByLastUpdate;
+}
+
 @end
-
-
 

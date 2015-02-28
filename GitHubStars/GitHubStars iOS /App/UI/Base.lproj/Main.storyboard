@@ -125,19 +125,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Repository with very long long name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-Mt-MAC">
-                                                    <rect key="frame" x="8" y="24.5" width="279.5" height="20.5"/>
+                                                    <rect key="frame" x="8" y="24" width="280" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhh-Or-Jik">
-                                                    <rect key="frame" x="582" y="24.5" width="10" height="20.5"/>
+                                                    <rect key="frame" x="582" y="24" width="10" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="issue.png" translatesAutoresizingMaskIntoConstraints="NO" id="dBU-wo-8Hz">
-                                                    <rect key="frame" x="564" y="27.5" width="15" height="15"/>
+                                                    <rect key="frame" x="564" y="27" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="83d-BH-Elz"/>
                                                         <constraint firstAttribute="width" constant="15" id="Pxm-Mt-DMc"/>
@@ -152,26 +152,26 @@
                                                     </variation>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj0-3T-cat">
-                                                    <rect key="frame" x="544" y="24.5" width="10" height="20.5"/>
+                                                    <rect key="frame" x="544" y="24" width="10" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fork.png" translatesAutoresizingMaskIntoConstraints="NO" id="3AG-pK-9XF">
-                                                    <rect key="frame" x="525" y="27.5" width="15" height="15"/>
+                                                    <rect key="frame" x="525" y="27" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="2h0-Ct-Unq"/>
                                                         <constraint firstAttribute="height" constant="15" id="q3Q-Pf-dg1"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gj-as-8b8">
-                                                    <rect key="frame" x="505" y="24.5" width="10" height="20.5"/>
+                                                    <rect key="frame" x="505" y="24" width="10" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="uwg-go-9io">
-                                                    <rect key="frame" x="486" y="26.5" width="15" height="15"/>
+                                                    <rect key="frame" x="486" y="26" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="NaW-uD-vlP"/>
                                                         <constraint firstAttribute="width" constant="15" id="gtv-R9-tP3"/>
