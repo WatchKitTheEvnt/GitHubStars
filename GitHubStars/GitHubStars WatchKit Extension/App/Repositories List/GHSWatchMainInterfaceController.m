@@ -106,8 +106,7 @@ typedef NS_ENUM(NSUInteger, GHSRepositorySortingOptions)
 
 - (void)showZeroCase
 {
-    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0U];
-    [self.interfaceTable insertRowsAtIndexes:indexSet withRowType:GHSWatchMainInterfaceControllerEmptyListRowType];
+    [self.interfaceTable setRowTypes:@[GHSWatchMainInterfaceControllerEmptyListRowType]];
     self.loaded = NO;
 }
 
